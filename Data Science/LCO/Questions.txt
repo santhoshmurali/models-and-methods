@@ -1,0 +1,3 @@
+1. In Transaction data. There are 4 date time variables, "Date","Month", "Billing Time" and "COLL MON". "Date" and "Billing Time" are same info, which captures the date and time when the amount was collected. "Date" is the month for which the payment is made. "COLL MON" is not clear. It has both Nov and Dec. Can you please explain?
+
+2. "PENDING AMT TO SUBMIT" in "ACCOUNTING CALCULATION" is not clear.

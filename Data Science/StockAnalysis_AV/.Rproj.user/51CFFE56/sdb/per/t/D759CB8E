@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#https://www.analyticsvidhya.com/blog/2017/09/comparative-stock-analysis/\n#install.packages('Quandl') #Quandl for Data Download\nlibrary(Quandl)\n\n#install.packages('sweep') #Return an array obtained from an input array by sweeping out a summary statistic.\nlibrary(sweep)\nlibrary(timetk) #part of Sweep\n\n#install.packages('tidyverse')\nlibrary(tidyverse) #https://cran.r-project.org/web/packages/tidyverse/tidyverse.pdf https://www.tidyverse.org/\nlibrary(forcats) #part of tidyverse\n\n#install.packages('tidyquant') #tidyquant integrates the best resources for collecting and analyzing financial data, xts and zoo, quantmod, TTR, and PerformanceAnalytics with the tidy data infrastructure of the tidyverse allowing for seamless interaction between each.\nlibrary(tidyquant)\n\n#install.packages('ggplot')\nlibrary(ggplot2)\nlibrary(stringr)\n\nlibrary(devtools)\n\ndevtools::install_github('dgrtwo/gganimate')\n",
+    "created" : 1507170548248.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "296314093",
+    "id" : "D759CB8E",
+    "lastKnownWriteTime" : 1507189353,
+    "last_content_update" : 1507189353981,
+    "path" : "C:/Home/Work/Data Science/StockAnalysis_AV/ScriptFromAnalyticsVidya.R",
+    "project_path" : "ScriptFromAnalyticsVidya.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

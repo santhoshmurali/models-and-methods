@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0615.2100                               -->
+<workbook original-version='10.3' source-build='10.3.1 (10300.17.0615.2100)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='TransReport+ (DerivedCalculations)' inline='true' name='federated.15f8d090wswjom18ic5mj117fcs2' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DerivedCalculations' name='excel-direct.0zbjg1g05kdb1y17moyh206n8583'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Home/Work/Data Science/LCO/DerivedCalculations.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[TransReport].[BOOK_NAME]' />
+              <expression op='[AccountReport].[COLL AREA]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.0zbjg1g05kdb1y17moyh206n8583' name='TransReport' table='[TransReport$]' type='table'>
+            <columns gridOrigin='A1:V1573:no:A1:V1573:0' header='yes' outcome='2'>
+              <column datatype='integer' name='S.L NO' ordinal='0' />
+              <column datatype='integer' name='COLLECTED AMT' ordinal='1' />
+              <column datatype='string' name='MODE' ordinal='2' />
+              <column datatype='string' name='DATE' ordinal='3' />
+              <column datatype='string' name='BILL_NO' ordinal='4' />
+              <column datatype='string' name='CODE_NO' ordinal='5' />
+              <column datatype='string' name='AMT' ordinal='6' />
+              <column datatype='integer' name='DEFAULT_CONCESSION' ordinal='7' />
+              <column datatype='integer' name='SPL_CONCESSION' ordinal='8' />
+              <column datatype='integer' name='BALANCE' ordinal='9' />
+              <column datatype='string' name='MONTH' ordinal='10' />
+              <column datatype='string' name='CUST_NAME' ordinal='11' />
+              <column datatype='string' name='DOOR_NO' ordinal='12' />
+              <column datatype='string' name='STREET_NAME' ordinal='13' />
+              <column datatype='string' name='PHONE_NUM' ordinal='14' />
+              <column datatype='string' name='OTHER_INFO' ordinal='15' />
+              <column datatype='string' name='BOOK_NAME' ordinal='16' />
+              <column datatype='string' name='Billing_Time' ordinal='17' />
+              <column datatype='string' name='STAFF_DETAILS' ordinal='18' />
+              <column datatype='string' name='COLL MON' ordinal='19' />
+              <column datatype='string' name='SMS' ordinal='20' />
+              <column datatype='string' name='SMS SELECT' ordinal='21' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0zbjg1g05kdb1y17moyh206n8583' name='AccountReport' table='[AccountReport$]' type='table'>
+            <columns gridOrigin='A1:O132:no:A1:O132:0' header='yes' outcome='6'>
+              <column datatype='integer' name='S.L NO' ordinal='0' />
+              <column datatype='string' name='DATE' ordinal='1' />
+              <column datatype='integer' name='MODE' ordinal='2' />
+              <column datatype='string' name='TYPE' ordinal='3' />
+              <column datatype='integer' name='Normal bill' ordinal='4' />
+              <column datatype='integer' name='Reversed bill' ordinal='5' />
+              <column datatype='integer' name='BILLS' ordinal='6' />
+              <column datatype='string' name='COLL AREA' ordinal='7' />
+              <column datatype='integer' name='CASH BEFORE CON' ordinal='8' />
+              <column datatype='integer' name='CON AND BAL' ordinal='9' />
+              <column datatype='integer' name='CASH COLLECTED' ordinal='10' />
+              <column datatype='integer' name='MSO SHARE' ordinal='11' />
+              <column datatype='integer' name='TOTAL CASH' ordinal='12' />
+              <column datatype='string' name='MONTH' ordinal='13' />
+              <column datatype='string' name='PENDING AMT TO SUBMIT' ordinal='14' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[AMT]' value='[TransReport].[AMT]' />
+          <map key='[BALANCE]' value='[TransReport].[BALANCE]' />
+          <map key='[BILLS]' value='[AccountReport].[BILLS]' />
+          <map key='[BILL_NO]' value='[TransReport].[BILL_NO]' />
+          <map key='[BOOK_NAME]' value='[TransReport].[BOOK_NAME]' />
+          <map key='[Billing_Time]' value='[TransReport].[Billing_Time]' />
+          <map key='[CASH BEFORE CON]' value='[AccountReport].[CASH BEFORE CON]' />
+          <map key='[CASH COLLECTED]' value='[AccountReport].[CASH COLLECTED]' />
+          <map key='[CODE_NO]' value='[TransReport].[CODE_NO]' />
+          <map key='[COLL AREA]' value='[AccountReport].[COLL AREA]' />
+          <map key='[COLL MON]' value='[TransReport].[COLL MON]' />
+          <map key='[COLLECTED AMT]' value='[TransReport].[COLLECTED AMT]' />
+          <map key='[CON AND BAL]' value='[AccountReport].[CON AND BAL]' />
+          <map key='[CUST_NAME]' value='[TransReport].[CUST_NAME]' />
+          <map key='[DATE (AccountReport)]' value='[AccountReport].[DATE]' />
+          <map key='[DATE]' value='[TransReport].[DATE]' />
+          <map key='[DEFAULT_CONCESSION]' value='[TransReport].[DEFAULT_CONCESSION]' />
+          <map key='[DOOR_NO]' value='[TransReport].[DOOR_NO]' />
+          <map key='[MODE (AccountReport)]' value='[AccountReport].[MODE]' />
+          <map key='[MODE]' value='[TransReport].[MODE]' />
+          <map key='[MONTH (AccountReport)]' value='[AccountReport].[MONTH]' />
+          <map key='[MONTH]' value='[TransReport].[MONTH]' />
+          <map key='[MSO SHARE]' value='[AccountReport].[MSO SHARE]' />
+          <map key='[Normal bill]' value='[AccountReport].[Normal bill]' />
+          <map key='[OTHER_INFO]' value='[TransReport].[OTHER_INFO]' />
+          <map key='[PENDING AMT TO SUBMIT]' value='[AccountReport].[PENDING AMT TO SUBMIT]' />
+          <map key='[PHONE_NUM]' value='[TransReport].[PHONE_NUM]' />
+          <map key='[Reversed bill]' value='[AccountReport].[Reversed bill]' />
+          <map key='[S.L NO (AccountReport)]' value='[AccountReport].[S.L NO]' />
+          <map key='[S.L NO]' value='[TransReport].[S.L NO]' />
+          <map key='[SMS SELECT]' value='[TransReport].[SMS SELECT]' />
+          <map key='[SMS]' value='[TransReport].[SMS]' />
+          <map key='[SPL_CONCESSION]' value='[TransReport].[SPL_CONCESSION]' />
+          <map key='[STAFF_DETAILS]' value='[TransReport].[STAFF_DETAILS]' />
+          <map key='[STREET_NAME]' value='[TransReport].[STREET_NAME]' />
+          <map key='[TOTAL CASH]' value='[AccountReport].[TOTAL CASH]' />
+          <map key='[TYPE]' value='[AccountReport].[TYPE]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>S.L NO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.L NO]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>S.L NO</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLLECTED AMT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COLLECTED AMT]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>COLLECTED AMT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MODE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MODE]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>MODE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DATE]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILL_NO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BILL_NO]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>BILL_NO</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE_NO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CODE_NO]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>CODE_NO</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AMT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AMT]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>AMT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEFAULT_CONCESSION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEFAULT_CONCESSION]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>DEFAULT_CONCESSION</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SPL_CONCESSION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SPL_CONCESSION]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>SPL_CONCESSION</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BALANCE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BALANCE]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>BALANCE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MONTH]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>MONTH</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CUST_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CUST_NAME]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>CUST_NAME</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOOR_NO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DOOR_NO]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>DOOR_NO</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STREET_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STREET_NAME]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>STREET_NAME</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PHONE_NUM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PHONE_NUM]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>PHONE_NUM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OTHER_INFO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OTHER_INFO]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>OTHER_INFO</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOOK_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BOOK_NAME]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>BOOK_NAME</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Billing_Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Billing_Time]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>Billing_Time</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STAFF_DETAILS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STAFF_DETAILS]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>STAFF_DETAILS</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLL MON</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COLL MON]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>COLL MON</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SMS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SMS]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>SMS</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SMS SELECT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SMS SELECT]</local-name>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias>SMS SELECT</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TransReport]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:V1573:no:A1:V1573:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.L NO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.L NO (AccountReport)]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>S.L NO</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DATE (AccountReport)]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MODE (AccountReport)]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>MODE</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TYPE]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>TYPE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normal bill</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Normal bill]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>Normal bill</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reversed bill</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reversed bill]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>Reversed bill</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BILLS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BILLS]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>BILLS</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLL AREA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[COLL AREA]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>COLL AREA</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASH BEFORE CON</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CASH BEFORE CON]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>CASH BEFORE CON</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CON AND BAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CON AND BAL]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>CON AND BAL</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASH COLLECTED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CASH COLLECTED]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>CASH COLLECTED</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSO SHARE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSO SHARE]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>MSO SHARE</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL CASH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL CASH]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>TOTAL CASH</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MONTH (AccountReport)]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>MONTH</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PENDING AMT TO SUBMIT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PENDING AMT TO SUBMIT]</local-name>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias>PENDING AMT TO SUBMIT</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AccountReport]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O132:no:A1:O132:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Balance' datatype='integer' name='[BALANCE]' role='measure' type='quantitative' />
+      <column caption='Bills' datatype='integer' name='[BILLS]' role='measure' type='quantitative' />
+      <column caption='Bill No' datatype='string' name='[BILL_NO]' role='dimension' type='nominal' />
+      <column caption='Book Name' datatype='string' name='[BOOK_NAME]' role='dimension' type='nominal' />
+      <column caption='Billing Time' datatype='string' name='[Billing_Time]' role='dimension' type='nominal' />
+      <column caption='Cash Before Con' datatype='integer' name='[CASH BEFORE CON]' role='measure' type='quantitative' />
+      <column caption='Cash Collected' datatype='integer' name='[CASH COLLECTED]' role='measure' type='quantitative' />
+      <column caption='Code No' datatype='string' name='[CODE_NO]' role='dimension' type='nominal' />
+      <column caption='Coll Area' datatype='string' name='[COLL AREA]' role='dimension' type='nominal' />
+      <column caption='Coll Mon' datatype='string' name='[COLL MON]' role='dimension' type='nominal' />
+      <column caption='Collected Amt' datatype='integer' name='[COLLECTED AMT]' role='measure' type='quantitative' />
+      <column caption='Con And Bal' datatype='integer' name='[CON AND BAL]' role='measure' type='quantitative' />
+      <column caption='Cust Name' datatype='string' name='[CUST_NAME]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='string' name='[DATE]' role='dimension' type='nominal' />
+      <column caption='Default Concession' datatype='integer' name='[DEFAULT_CONCESSION]' role='measure' type='quantitative' />
+      <column caption='Door No' datatype='string' name='[DOOR_NO]' role='dimension' type='nominal' />
+      <column caption='Mode' datatype='string' name='[MODE]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[MONTH]' role='dimension' type='nominal' />
+      <column caption='Mso Share' datatype='integer' name='[MSO SHARE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Other Info' datatype='string' name='[OTHER_INFO]' role='dimension' type='nominal' />
+      <column caption='Pending Amt To Submit' datatype='string' name='[PENDING AMT TO SUBMIT]' role='dimension' type='nominal' />
+      <column caption='Phone Num' datatype='string' name='[PHONE_NUM]' role='dimension' type='nominal' />
+      <column caption='S.L No' datatype='integer' name='[S.L NO]' role='measure' type='quantitative' />
+      <column caption='Sms Select' datatype='string' name='[SMS SELECT]' role='dimension' type='nominal' />
+      <column caption='Spl Concession' datatype='integer' name='[SPL_CONCESSION]' role='measure' type='quantitative' />
+      <column caption='Staff Details' datatype='string' name='[STAFF_DETAILS]' role='dimension' type='nominal' />
+      <column caption='Street Name' datatype='string' name='[STREET_NAME]' role='dimension' type='nominal' />
+      <column caption='Total Cash' datatype='integer' name='[TOTAL CASH]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[TYPE]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.189024' measure-ordering='alphabetic' measure-percentage='0.810976' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

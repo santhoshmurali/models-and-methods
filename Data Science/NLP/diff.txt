@@ -1,0 +1,43 @@
+== Changes made ==
+
+mix20_rand700_tokens_cleaned.zip 
+-> mix20_rand700_tokens_0211.tar.gz
+
+Removed : (non-English/incomplete reviews)
+
+pos/cv037_tok-11720.txt
+pos/cv206_tok-12590.txt
+pos/cv263_tok-10033.txt
+pos/cv365_tok-21785.txt
+pos/cv400_tok-11748.txt
+pos/cv528_tok-12960.txt
+pos/cv627_tok-14423.txt
+
+neg/cv059_tok-8583.txt
+neg/cv111_tok-11625.txt
+neg/cv193_tok-28093.txt
+neg/cv216_tok-27832.txt
+neg/cv219_tok-11130.txt
+neg/cv423_tok-10742.txt
+neg/cv592_tok-10894.txt
+
+
+Moved: (based on Nathan's judgement when he read the review,
+sometimes different from the original author's own rating,
+as listed below)
+
+neg -> pos:
+cv279_tok-23947.txt	*1/2, but reads positive
+cv346_tok-24609.txt 	misclassification
+cv375_tok-0514.txt  	misclassification
+cv389_tok-8969.txt 	misclassification
+cv425_tok-8417.txt 	several reviews together
+cv518_tok-11610.txt 	misclassification
+
+pos -> neg:
+cv017_tok-29801.txt 	*** Average, hits and misses 
+cv352_tok-15970.txt 	(out of 4): *** 
+cv375_tok-21437.txt 	* * * - Okay movie, hits and misses
+cv377_tok-7572.txt 	*** Pretty good, bring a friend
+cv546_tok-23965.txt  	* * * - Okay movie, hits and misses
+

@@ -1,0 +1,52 @@
+# I have installed python3 /usr/bin/python3
+to install Python3
+0. yum install openssl-devel
+
+1. Install wget
+> yum install wget
+
+2. download python 3
+> wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz
+
+3. unpack python3
+> tar xfz  Python-3.6.6.tgz
+
+4. Traverse
+> cd Python-3.6.6
+
+5. execute configure
+> ./configure
+
+6. Install C Compiler
+> yum group list
+> yum group list ids
+
+7. Install "Development Tools" that has GCC
+> yum group install "Development Tools"
+OR
+> sudo yum group install "Development Tools"
+OR
+> yum groupinstall "Development Tools"
+
+8. Installing zlib
+> yum install zlib-devel
+
+9. Make the file
+> make altinstall
+
+10. Install Packages : Configure PIP
+> cd /etc
+> vi pip.conf
+> #paste 
+[global]
+trusted-host = pypi.python.org
+               pypi.org
+               files.pythonhosted.org
+
+
+
+
+
+
+#Installing Jupyter
+- Need to start
