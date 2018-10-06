@@ -1,0 +1,287 @@
+---
+title: "Sentiment Analysis - Text Mining"
+author: "Group 9 | Sai, Hari, Raj, Dinesh and Santhosh"
+date: "September 17, 2017"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+## ** Bit Coin **
+
+### ** What is a Bit coin and How social community looks at it. Does they have positive sentiment or Negative? All these questions can be answered using text Mining with the use of Twitter Data. It required lots of Text cleaning, building world cloud, finding most frequent words tweeted, which is the hot trending topic etc.**
+
+### Setting up the Environment and Initiating Required Libraries
+```{r}
+
+#Library Needed for Text Mining
+library(tm)
+
+#for string operations
+library(stringi)
+
+#for finding word Freequency
+library(SnowballC)
+
+#Other Required Libraries
+library(RColorBrewer)
+library(wordcloud)
+library(qdap)
+library(ggplot2)
+library(topicmodels)
+library(data.table)
+library(sentiment)
+library(dplyr)
+library(streamgraph)
+```
+### Functions and Methods for carrying out repeated tasks
+#### Function for cleaning the data
+```{r}
+cleanData = function(AnyText){
+  some_txt = AnyText
+  some_txt = genX(some_txt, " <", ">")
+  some_txt = gsub(" {0,}http([[:punct:]]|[[:digit:]]|[a-z|A-Z])+", " ", some_txt)
+  #Removing Single Characters
+  some_txt = gsub("[[:punct:]]", " ", some_txt)
+  some_txt = gsub("[[:digit:]]", " ", some_txt)
+  some_txt = gsub("( ){1,}. "," ", some_txt)
+  some_txt = gsub(" .( ){1,}"," ", some_txt)
+  some_txt = gsub("^. {1,}"," ", some_txt)
+  some_txt = gsub("{1,}.$"," ", some_txt)
+  
+  #Removing Numbers
+  some_txt = gsub("[0-9]+","", some_txt)
+  
+  some_txt = gsub("(RT|via)((?:\b\\W*@\\w+)+)", " ", some_txt,perl=TRUE)
+  some_txt = gsub("@\\w+", " ", some_txt)
+  #some_txt = gsub("[ t]{2,}", " ", some_txt)
+  #some_txt = gsub("\\t", "", some_txt)
+  some_txt = gsub("^\\s+|\\s+$", " ", some_txt)
+  some_txt = gsub("amp", "", some_txt)
+  some_txt = gsub("^RT[ ]+","", some_txt)
+  some_txt = gsub("[^[:alpha:][:space:]]*", "", some_txt) 
+  some_txt = gsub("[ ]{2,}"," ", some_txt)
+  some_txt = gsub("(\b|^)[a-zA-Z0-9]{2,2}( |\n|$)+","", some_txt)
+  #some_txt = gsub("(^ )|( $)","", some_txt)
+  return(some_txt)
+}
+```
+#### Dictionary Set-Up for completing the mis
+```{r}
+stemCompletion2 <- function(x,dictionary) {
+  x <- unlist(strsplit(as.character(x)," "))
+  x <- x[x !=""]
+  x <- stemCompletion(x, dictionary = dictionary)
+  x <- paste(x, sep="", collapse=" ")
+  PlainTextDocument(stripWhitespace(x))
+}
+```
+#### Replacing the incorrect words
+```{r}
+replaceWord <- function(corpus, oldword, newword)
+{
+  tm_map(corpus, content_transformer(gsub), pattern=oldword, replacement=newword)
+}
+```
+
+
+
+## Importing the Twitter Data : Data about "Bitcoin"
+```{r}
+#Twitter Data
+TweetDF = read.csv("C:/Home/Work/GreatLakes/Web and Social Media Analytics/Assignment/bitcoin.csv", header = T, sep=",")
+
+```
+
+
+### Cleaning the Data and ensuring minial duplicate tweets
+```{r}
+CleandedTWeetData = sapply(TweetDF$text, function(t) cleanData(t))
+CleandedTWeetData[150]
+RepeatTweets = data.frame(table(CleandedTWeetData))
+RepeatTweets = RepeatTweets[order(RepeatTweets$Freq, decreasing = FALSE),]
+nrow(RepeatTweets)
+nrow(unique(RepeatTweets))
+CleandedTWeetData = unique(CleandedTWeetData)
+```
+#### As both has 663 records, We can say that there is no duplicate Tweets
+
+
+### Creating Data Corpus and Preparing and Cleaning the data
+```{r}
+#Corpus
+TweetDataCorpus = VCorpus(VectorSource(CleandedTWeetData))
+TweetDataCorpus = tm_map(TweetDataCorpus, content_transformer(stri_trans_tolower))
+TweetDataCorpus = tm_map(TweetDataCorpus, content_transformer(cleanData))
+# Removing Stop Words
+enStopWords<- c((stopwords('en')),c("rt", "use", "used", "via", "amp", "http","https","character","hour","year","id","min","datetimestamp","description","isdst","heading","language","meta","mday","mon","wday","yday","listcontent","day","re", "itt"))
+TweetDataCorpus = tm_map(TweetDataCorpus,removeWords , enStopWords) 
+```
+
+### Creating a copy of the corpus to perform dictionary operations
+```{r}
+TweetDataCorpusDict = TweetDataCorpus
+TweetDataCorpusDict = unique(unlist(strsplit(as.character(TweetDataCorpusDict)," ")))
+TweetDataCorpusWords = unlist(strsplit(as.character(TweetDataCorpus)," "))
+TweetDataCorpusDict = Corpus(VectorSource(TweetDataCorpusDict))
+```
+
+### Stemming the data
+```{r}
+TweetDataCorpus = tm_map(TweetDataCorpus, stemDocument)
+writeLines(strwrap(TweetDataCorpus[[150]]$content,60))
+
+#####Stem Complete and Display the same tweet above with the completed and corrected text. 
+TweetDataCorpus <- lapply(TweetDataCorpus, stemCompletion2, dictionary=TweetDataCorpusDict)
+TweetDataCorpus <- VCorpus(VectorSource(TweetDataCorpus))
+writeLines(strwrap(TweetDataCorpus[[150]]$content, 60))
+```
+
+#### **All the data have been stemmed. if we notice there are still some words which are incomplete. That we will treat it by using other cord correction mechanics.**
+
+### Identifying and correcting misspelt words if any and that too if it is impacting in squeezing data
+```{r Word correction}
+TokenWords = sapply(TweetDataCorpusWords, function(x) gsub("([[:punct:]]| {1,}|[0-9])", "", x))
+TokenWords = data.frame(TokenWords)
+TokenWords = data.frame(table(TokenWords))
+TokenWords = TokenWords[order(TokenWords$Freq, decreasing = T),]
+head(as.matrix(TokenWords), 40)
+
+TweetDataCorpus =  replaceWord(TweetDataCorpus, "bitcoi ", "bitcoin")
+TweetDataCorpus =  replaceWord(TweetDataCorpus, "cryptocurren ", "cryptocurrency")
+
+
+```
+##### **There are lots of Repeated and very common words in those corpus which will be removed as part of corpus cleaning and stop words treatment. Having those words will skew the results. Also, this list gives top 40 tweeted words related to Bitcoins**
+
+
+### Building Term Document Matrix
+```{r}
+TwitterTDM = TermDocumentMatrix(TweetDataCorpus, control= list(wordLengths= c(1, Inf)))
+TwitterTDM
+
+TwitterIdx <- which(dimnames(TwitterTDM)$Terms %in% c("bitcoin", "blockchain"))
+as.matrix(TwitterTDM[TwitterIdx,21:30])
+```
+
+
+### To identify the terms that are most used freequently
+```{r}
+freq_terms = findFreqTerms(TwitterTDM, lowfreq = 20)
+term.freq <- rowSums(as.matrix(TwitterTDM))
+term.freq <- subset(term.freq, term.freq > 20)
+term.freq
+TermDataFrame <- data.frame(term = names(term.freq), freq= term.freq)
+TermDataFrame
+```
+
+### Plotting the Term Freequency as a graph
+```{r}
+ggplot(TermDataFrame, aes(reorder(term, freq),freq)) + theme_bw() + geom_bar(stat = "identity")  + coord_flip() +labs(list(title="Term Frequency Chart", x="Terms", y="Term Counts")) 
+```
+### As it is all about "bitcoin" we are seeing huge chunk of tweets has that word. When we look at this, China is mentioned as 5th most tweeted word along with bit coin. as no other country we can find in this list other than China. We can say that China is positively or negatively impacting the bitcoin.**#####calculate the frequency of words and sort it by frequency and setting up the Wordcloud
+```{r WordCloud, warning=FALSE}
+TweetWordCloud  <-sort(rowSums(as.matrix(TwitterTDM)), decreasing= F)
+pal<- brewer.pal(8, "Dark2")
+wordcloud(words = names(TweetWordCloud), freq =TweetWordCloud, min.freq = 2, random.order = F, colors = pal, max.words = 100)
+
+# Identify and plot word correlations. For example 
+WordCorr <- apply_as_df(TweetDataCorpus[1:500], word_cor, word = "china", r=.25)
+plot(WordCorr)
+
+qheat(vect2df(WordCorr[[1]], "word", "china"), values=TRUE, high="red",
+digits=2, order.by ="china", plot = FALSE) + coord_flip()
+
+# Messages with word - love
+Termdf <- data.frame(text=sapply(TweetDataCorpus, `[[`, "content"), stringsAsFactors=FALSE)
+head(unique(Termdf[grep("china", Termdf$text), ]), n=10)
+```
+
+
+##### Finding association with a specific keyword in the tweets
+```{r Find Association}
+findAssocs(TwitterTDM, "india", 0.2)
+findAssocs(TwitterTDM, "china", 0.2)
+```
+##### ** When finding association words for India and China w.r.t bit coin. We can see that there are lot other countries associated with India with respect to bitcoin. We can assume that there is a prospect of using bitcoins for India when trading with other countries. India and "mull"(considers) is 0.52, we have to notice. and there is no significant negative word for India. for China, we see "Stop" as 0.33, war as 0.25, blame as "0.21". We can assume that though in china many people speak about bit coin, as a country it is still conservative in implementing it.**
+
+
+#### Topic Modeling to identify latent/hidden topics using Linear Dicriminant technique
+```{r}
+dtm <- as.DocumentTermMatrix(TwitterTDM)
+
+rowTotals <- apply(dtm , 1, sum)
+
+#NullDocs <- dtm[rowTotals==0, ]
+NonNullDocs <- dtm[rowTotals!=0, ]
+dtm   <- dtm[rowTotals > 0, ]
+
+ 
+
+if (length(NonNullDocs$dimnames$Docs) > 0) {
+  TweetDF <- TweetDF[as.numeric(NonNullDocs$dimnames$Docs),]
+}
+
+
+lda <- LDA(dtm, k = 5) # find 5 topic
+term <- terms(lda, 7) # first 7 terms of every topic
+(term <- apply(term, MARGIN = 2, paste, collapse = ", "))
+
+topics<- topics(lda)
+topics<- data.frame(date=as.Date(TweetDF$created), topic = topics)
+qplot (date, ..count.., data=topics, geom ="density", fill= term[topics$topic], position="stack")
+```
+
+
+
+#####Sentiment Analysis to identify positive/negative tweets
+```{r}
+# Use qdap polarity function to detect sentiment
+sentiments <- polarity(TweetDF$text)
+
+sentiments <- data.frame(sentiments$all$polarity)
+
+sentiments[["polarity"]] <- cut(sentiments[[ "sentiments.all.polarity"]], c(-5,0.0,5), labels = c("negative","positive"))
+
+table(sentiments$polarity)
+
+```
+
+
+
+#####Sentiment Plot by date
+```{r}
+sentiments$score<- 0
+sentiments$score[sentiments$polarity == "positive"]<- 1
+sentiments$score[sentiments$polarity == "negative"]<- -1
+sentiments$date <- (TweetDF$created)
+result <- aggregate(score ~ TweetDF$created, data = sentiments, sum)
+plot(x= result$score, type = "l", xlim = c(300,500), ylim = c(-5,5), ylab = "Score")
+
+```
+
+
+##### Stream Graph for sentiment by date
+```{r}
+
+Data<-data.frame(sentiments$polarity)
+colnames(Data)[1] <- "polarity"
+Data$Date <- TweetDF$created
+Data$text <- NULL
+Data$Count <- 1
+graphdata <- aggregate(Count ~ polarity + as.character(Date),data=Data,FUN=sum)
+colnames(graphdata)[2] <- "Date"
+str(graphdata)
+graphdata %>%
+streamgraph(polarity, Count, Date) %>%
+  sg_axis_x(20) %>%
+  sg_axis_x(1, "Date","%d-%b %H-%M") %>%
+  sg_legend(show=TRUE, label="Polarity: ")
+```
+# Overall 67% we have negative sentiment about bit coins.
+

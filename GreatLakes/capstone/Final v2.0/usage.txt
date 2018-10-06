@@ -1,0 +1,6 @@
+C:\Home\Work\GreatLakes\capstone\Package>python Recommend_and_Eval.py latestproducts_with_id.xlsx 3 11 6 1
+latestproducts_with_id.xlsx : Source File
+3 : Customer Id
+11 : Product Id
+6 : K
+1 : Return Recommendation

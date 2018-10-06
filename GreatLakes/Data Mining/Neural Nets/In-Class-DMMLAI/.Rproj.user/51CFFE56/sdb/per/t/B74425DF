@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1495710881879.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B74425DF",
+    "lastKnownWriteTime" : 7017579596717764206,
+    "last_content_update" : 1495710881879,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "BBC10631",
+        "caption" : "nn.devscaled",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=nn.devscaled&cache_key=BBC10631",
+        "displayedObservations" : 14000,
+        "environment" : "",
+        "object" : "nn.devscaled",
+        "preview" : 0,
+        "totalObservations" : 14000,
+        "variables" : 6
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

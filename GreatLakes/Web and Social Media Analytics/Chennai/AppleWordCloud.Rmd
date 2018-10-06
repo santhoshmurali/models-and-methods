@@ -1,0 +1,77 @@
+---
+title: "AppleWordCloud1"
+author: "VokseDigital"
+date: "March 16, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#Setup the environment
+library(SnowballC)
+library(tm)
+library(ggplot2)
+library(RColorBrewer)
+library(wordcloud)
+library(topicmodels)
+library(data.table)
+library(stringi)
+library(qdap)
+library(dplyr)
+library(rJava)
+```
+#####Read Twitter Data
+
+```{r tweets}
+setwd("D:/OneDrive/Documents/Reference/Datasets")
+tweets.df <- read.csv("tweets.csv")
+```
+#####Cleaning the text data by removing links, tags and delimiters.   
+#####Build a Corpus, and specify the location to be the character Vectors  
+```{r}
+# Remove character string between < >
+tweets.df$Tweet <- genX(tweets.df$Tweet, " <", ">")
+head(tweets.df)
+
+# Create document corpus with tweet text and clean up
+myCorpus<- Corpus(VectorSource(tweets.df$Tweet)) 
+
+myCorpus <- tm_map(myCorpus,tolower)
+myCorpus <- tm_map(myCorpus,removeWords, stopwords("english"))
+myCorpus <- tm_map(myCorpus,removeNumbers)
+myCorpus <- tm_map(myCorpus,removePunctuation)
+myCorpus <- tm_map(myCorpus,stripWhitespace)
+```
+#####Find the terms used most frequently
+```{r Term frequency}
+dtm1 <- TermDocumentMatrix(myCorpus)
+
+(freq.terms <- findFreqTerms(dtm1, lowfreq = 40))
+term.freq <- rowSums(as.matrix(dtm1))
+term.freq <- subset(term.freq, term.freq > 40)
+df <- data.frame(term = names(term.freq), freq= term.freq)
+```
+
+#####plotting the graph of frequent terms
+```{r Graph}
+ggplot(df, aes(reorder(term, freq),freq)) + theme_bw() + geom_bar(stat = "identity")  + coord_flip() +labs(list(title="Term Frequency Chart", x="Terms", y="Term Counts")) 
+```
+
+#####plotting the word cloud
+```{r Graph,echo=TRUE}
+dtm <- DocumentTermMatrix(myCorpus)
+
+m <- as.matrix(dtm)
+
+v <- sort(colSums(m),decreasing=TRUE)
+
+head(v,14)
+
+words <- names(v)
+
+d <- data.frame(word=words, freq=v)
+
+wordcloud(d$word,d$freq,min.freq=15)
+```
+
+

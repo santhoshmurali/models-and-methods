@@ -1,0 +1,322 @@
+CardNumber,Model,Series Name,Seating,Type,Brand,Color,Price,Displacement_Type,Fuel Type,Mileage_type,Transmission Type,Airbags,Entertainment,ABS,Center Locking,Child Locking,Steering Adjustment,Keyless Start,Cruise Control,Parking Sensors,Rating
+CRD1,Maruti Suzuki Alto 800 - LX,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,0,No,No,No,Yes,No,No,No,No,3.8
+CRD2,Maruti Suzuki Alto 800 - LX,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,0,No,No,No,Yes,No,No,No,No,6.2
+CRD3,Maruti Suzuki Alto 800 - LX,Maruti Alto Series,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,0,No,No,No,Yes,No,No,No,No,8.2
+CRD4,Maruti Suzuki Alto 800 - VXI,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Manual,Yes,No,No,No,No,6
+CRD5,Maruti Suzuki Alto 800 - VXI,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Manual,Yes,No,No,No,No,3
+CRD6,Maruti Suzuki Alto 800 - VXI,Maruti Alto Series,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Manual,Yes,No,No,No,No,8.1
+CRD7,Maruti Suzuki Alto 800 - LXI CNG - O,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Black,Entry,Low,CNG,High,Manual,1,No,No,No,Yes,No,No,No,No,2.2
+CRD8,Maruti Suzuki Alto 800 - LXI CNG - O,Maruti Alto Series,Up to 5,Hatchback,Suzuki,Color,Entry,Low,CNG,High,Manual,1,No,No,No,Yes,No,No,No,No,3
+CRD9,Maruti Suzuki Alto 800 - LXI CNG - O,Maruti Alto Series,Up to 5,Hatchback,Suzuki,White,Entry,Low,CNG,High,Manual,1,No,No,No,Yes,No,No,No,No,6.1
+CRD10,Maruti Baleno -Alpha 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,5.1
+CRD11,Maruti Baleno -Alpha 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,0
+CRD12,Maruti Baleno -Alpha 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,2
+CRD13,Maruti Baleno -Delta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,6
+CRD14,Maruti Baleno -Delta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,6
+CRD15,Maruti Baleno -Delta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,0.9
+CRD16,Maruti Baleno -Delta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,9.5
+CRD17,Maruti Baleno -Delta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,7.6
+CRD18,Maruti Baleno -Delta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,5.7
+CRD19,Maruti Baleno -Sigma 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,4.5
+CRD20,Maruti Baleno -Sigma 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,5.8
+CRD21,Maruti Baleno -Sigma 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,7.5
+CRD22,Maruti Baleno -Zeta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,1.1
+CRD23,Maruti Baleno -Zeta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,2.7
+CRD24,Maruti Baleno -Zeta 1.2,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,4.6
+CRD25,Maruti Baleno -Zeta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,9.5
+CRD26,Maruti Baleno -Zeta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,3.2
+CRD27,Maruti Baleno -Zeta 1.2 AT,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,1.4
+CRD28,Maruti Baleno -Zeta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,5.9
+CRD29,Maruti Baleno -Zeta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,2.2
+CRD30,Maruti Baleno -Zeta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,3.7
+CRD31,Maruti Baleno -Sigma 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,9.9
+CRD32,Maruti Baleno -Sigma 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,1
+CRD33,Maruti Baleno -Sigma 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Manual,No,Tilt,No,No,No,4.1
+CRD34,Maruti Baleno -Delta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,9.9
+CRD35,Maruti Baleno -Delta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,6.4
+CRD36,Maruti Baleno -Delta 1.3,Maruti Baleno,Up to 5,Station Wagon,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,0.7
+CRD37,Maruti Suzuki Dzire - LDI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,8.8
+CRD38,Maruti Suzuki Dzire - LDI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,9.3
+CRD39,Maruti Suzuki Dzire - LDI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,3.5
+CRD40,Maruti Suzuki Dzire - LXI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,6.4
+CRD41,Maruti Suzuki Dzire - LXI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,1.7
+CRD42,Maruti Suzuki Dzire - LXI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,No,Yes,Tilt,No,No,No,7.9
+CRD43,Maruti Suzuki Dzire - VDI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,9
+CRD44,Maruti Suzuki Dzire - VDI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,1.9
+CRD45,Maruti Suzuki Dzire - VDI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,0.2
+CRD46,Maruti Suzuki Dzire - VDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,0.4
+CRD47,Maruti Suzuki Dzire - VDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,1.4
+CRD48,Maruti Suzuki Dzire - VDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,3.8
+CRD49,Maruti Suzuki Dzire - VXI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,2.9
+CRD50,Maruti Suzuki Dzire - VXI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,0.8
+CRD51,Maruti Suzuki Dzire - VXI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,2.6
+CRD52,Maruti Suzuki Dzire - VXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,8.3
+CRD53,Maruti Suzuki Dzire - VXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,4.2
+CRD54,Maruti Suzuki Dzire - VXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,1.6
+CRD55,Maruti Suzuki Dzire - ZDI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,1.2
+CRD56,Maruti Suzuki Dzire - ZDI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.9
+CRD57,Maruti Suzuki Dzire - ZDI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,4.2
+CRD58,Maruti Suzuki Dzire - ZDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Premium,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,7.2
+CRD59,Maruti Suzuki Dzire - ZDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Premium,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.5
+CRD60,Maruti Suzuki Dzire - ZDI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Premium,Medium,Diesel,High,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.6
+CRD61,Maruti Suzuki Dzire - ZDI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Premium,Medium,Diesel,High,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,1.8
+CRD62,Maruti Suzuki Dzire - ZDI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Premium,Medium,Diesel,High,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.2
+CRD63,Maruti Suzuki Dzire - ZDI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,White,Premium,Medium,Diesel,High,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.6
+CRD64,Maruti Suzuki Dzire - ZDI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Premium,Medium,Diesel,High,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,2.3
+CRD65,Maruti Suzuki Dzire - ZDI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Premium,Medium,Diesel,High,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,3.3
+CRD66,Maruti Suzuki Dzire - ZDI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Premium,Medium,Diesel,High,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,7
+CRD67,Maruti Suzuki Dzire - ZXI,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.8
+CRD68,Maruti Suzuki Dzire - ZXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,1
+CRD69,Maruti Suzuki Dzire - ZXI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.1
+CRD70,Maruti Suzuki Dzire - ZXI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Black,Premium,Medium,Petrol,Medium,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,2.9
+CRD71,Maruti Suzuki Dzire - ZXI,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,8.4
+CRD72,Maruti Suzuki Dzire - ZXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.2
+CRD73,Maruti Suzuki Dzire - ZXI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.3
+CRD74,Maruti Suzuki Dzire - ZXI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,Color,Premium,Medium,Petrol,Medium,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.7
+CRD75,Maruti Suzuki Dzire - ZXI,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,6
+CRD76,Maruti Suzuki Dzire - ZXI AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Automatic,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,3.6
+CRD77,Maruti Suzuki Dzire - ZXI Plus,Maruti DZire,Up to 5,Sedan,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.6
+CRD78,Maruti Suzuki Dzire - ZXI Plus AMT,Maruti DZire,Up to 5,Sedan,Suzuki,White,Premium,Medium,Petrol,Medium,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,7.8
+CRD79,Maruti Swift - Ldi,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,No,No,Remote,Yes,Tilt,No,No,No,6.7
+CRD80,Maruti Swift - Ldi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,5.7
+CRD81,Maruti Swift - Lxi (O),Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Entry,Medium,Petrol,Medium,Manual,1,No,No,Remote,Yes,Tilt,No,No,No,1.3
+CRD82,Maruti Swift - Lxi ABS (O),Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,2.5
+CRD83,Maruti Swift - VDi,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,3.2
+CRD84,Maruti Swift - Vdi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,4.8
+CRD85,Maruti Swift - VXI,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,1.3
+CRD86,Maruti Swift - VXI ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,9.3
+CRD87,Maruthi Swift Zdi,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.2
+CRD88,Maruthi Swift Zxi,Maruti Swift,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.1
+CRD89,Maruti Swift - Ldi,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,No,No,Remote,Yes,Tilt,No,No,No,5
+CRD90,Maruti Swift - Ldi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,0.5
+CRD91,Maruti Swift - Lxi (O),Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Entry,Medium,Petrol,Medium,Manual,1,No,No,Remote,Yes,Tilt,No,No,No,4.7
+CRD92,Maruti Swift - Lxi ABS (O),Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,7.3
+CRD93,Maruti Swift - VDi,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,8.1
+CRD94,Maruti Swift - Vdi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,9.1
+CRD95,Maruti Swift - VXI,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,7.6
+CRD96,Maruti Swift - VXI ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,2.1
+CRD97,Maruthi Swift Zdi,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.8
+CRD98,Maruthi Swift Zxi,Maruti Swift,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,2.4
+CRD99,Maruti Swift - Ldi,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,No,No,Remote,Yes,Tilt,No,No,No,5
+CRD100,Maruti Swift - Ldi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,0.7
+CRD101,Maruti Swift - Lxi (O),Maruti Swift,Up to 5,Hatchback,Suzuki,White,Entry,Medium,Petrol,Medium,Manual,1,No,No,Remote,Yes,Tilt,No,No,No,2
+CRD102,Maruti Swift - Lxi ABS (O),Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,1.3
+CRD103,Maruti Swift - VDi,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,4.7
+CRD104,Maruti Swift - Vdi ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,6.3
+CRD105,Maruti Swift - VXI,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,1,Basic,No,Remote,Yes,Tilt,No,No,No,9.1
+CRD106,Maruti Swift - VXI ABS,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,0.7
+CRD107,Maruthi Swift Zdi,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Diesel,High,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.8
+CRD108,Maruthi Swift Zxi,Maruti Swift,Up to 5,Hatchback,Suzuki,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.9
+CRD109,Hyundai Grand i10 - Asta 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,0.3
+CRD110,Hyundai Grand i10 - Asta U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,6.3
+CRD111,Hyundai Grand i10 - Era 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Entry,Medium,Petrol,Medium,Manual,1,No,No,No,Yes,No,No,No,No,0.9
+CRD112,Hyundai Grand i10 - Era U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,No,Yes,No,No,No,No,4
+CRD113,Hyundai Grand i10 - Magna 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,6.9
+CRD114,Hyundai Grand i10 - Magna AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Automatic,1,No,No,Manual,Yes,No,No,No,No,3
+CRD115,Hyundai Grand i10 - Magna U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,7.3
+CRD116,Hyundai Grand i10 - Sportz (O) 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,10
+CRD117,Hyundai Grand i10 - Sportz (O) AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Automatic,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,0.9
+CRD118,Hyundai Grand i10 - Sportz (O) U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,6.1
+CRD119,Hyundai Grand i10 - Sportz 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,0.3
+CRD120,Hyundai Grand i10 - Sportz U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,2.8
+CRD121,Hyundai Grand i10 - Asta 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,5.9
+CRD122,Hyundai Grand i10 - Asta U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,4
+CRD123,Hyundai Grand i10 - Era 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Entry,Medium,Petrol,Medium,Manual,1,No,No,No,Yes,No,No,No,No,3
+CRD124,Hyundai Grand i10 - Era U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,No,Yes,No,No,No,No,5.7
+CRD125,Hyundai Grand i10 - Magna 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,9.6
+CRD126,Hyundai Grand i10 - Magna AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Automatic,1,No,No,Manual,Yes,No,No,No,No,3.6
+CRD127,Hyundai Grand i10 - Magna U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,2.7
+CRD128,Hyundai Grand i10 - Sportz (O) 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,8.3
+CRD129,Hyundai Grand i10 - Sportz (O) AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Automatic,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,0.2
+CRD130,Hyundai Grand i10 - Sportz (O) U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,7.8
+CRD131,Hyundai Grand i10 - Sportz 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,6.8
+CRD132,Hyundai Grand i10 - Sportz U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,3.7
+CRD133,Hyundai Grand i10 - Asta 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,4.4
+CRD134,Hyundai Grand i10 - Asta U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Keyless,Yes,Tilt,Yes,No,Rear,0.1
+CRD135,Hyundai Grand i10 - Era 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Entry,Medium,Petrol,Medium,Manual,1,No,No,No,Yes,No,No,No,No,4.2
+CRD136,Hyundai Grand i10 - Era U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,No,Yes,No,No,No,No,0.9
+CRD137,Hyundai Grand i10 - Magna 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,7.7
+CRD138,Hyundai Grand i10 - Magna AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Automatic,1,No,No,Manual,Yes,No,No,No,No,2.8
+CRD139,Hyundai Grand i10 - Magna U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Diesel,Medium,Manual,1,No,No,Manual,Yes,No,No,No,No,8.1
+CRD140,Hyundai Grand i10 - Sportz (O) 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,1.2
+CRD141,Hyundai Grand i10 - Sportz (O) AT 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Automatic,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,2.7
+CRD142,Hyundai Grand i10 - Sportz (O) U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Diesel,Medium,Manual,2,Advanced,No,Remote,Yes,Tilt,No,No,Rear,5
+CRD143,Hyundai Grand i10 - Sportz 1.2 Kappa VTVT,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,6.7
+CRD144,Hyundai Grand i10 - Sportz U2 1.2 CRDi,Hyundai Grand i10,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,5.9
+CRD145,Hyundai Elite i20 - Asta 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,1.7
+CRD146,Hyundai Elite i20 - Asta 1.2 (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,High,Petrol,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,1.4
+CRD147,Hyundai Elite i20 - Asta 1.2 Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,6.7
+CRD148,Hyundai Elite i20 - Asta 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,9.7
+CRD149,Hyundai Elite i20 - Asta 1.4 CRDI (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Premium,High,Diesel,Medium,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,8.9
+CRD150,Hyundai Elite i20 - Asta 1.4 CRDI Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,9.5
+CRD151,Hyundai Elite i20 - Era 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Manual,2,No,No,Manual,Yes,No,No,No,No,0.9
+CRD152,Hyundai Elite i20 - Era 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,High,Diesel,Medium,Manual,2,No,No,Manual,Yes,No,No,No,No,2.9
+CRD153,Hyundai Elite i20 - Magna 1.4 AT,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Premium,High,Petrol,High,Automatic,2,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,1.3
+CRD154,Hyundai Elite i20 - Magna Executive 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Manual,2,Basic,No,Manual,Yes,No,No,No,No,9.2
+CRD155,Hyundai Elite i20 - Magna Executive 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,High,Diesel,Medium,Manual,2,Basic,No,Manual,Yes,No,No,No,No,2.8
+CRD156,Hyundai Elite i20 - Sportz 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,Medium,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,3.8
+CRD157,Hyundai Elite i20 - Sportz 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Black,Mid-Range,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,5.3
+CRD158,Hyundai Elite i20 - Asta 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,4.3
+CRD159,Hyundai Elite i20 - Asta 1.2 (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,High,Petrol,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,7.2
+CRD160,Hyundai Elite i20 - Asta 1.2 Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,3
+CRD161,Hyundai Elite i20 - Asta 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,8
+CRD162,Hyundai Elite i20 - Asta 1.4 CRDI (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Premium,High,Diesel,Medium,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,8.8
+CRD163,Hyundai Elite i20 - Asta 1.4 CRDI Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,7.7
+CRD164,Hyundai Elite i20 - Era 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Manual,2,No,No,Manual,Yes,No,No,No,No,3.6
+CRD165,Hyundai Elite i20 - Era 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,High,Diesel,Medium,Manual,2,No,No,Manual,Yes,No,No,No,No,7.9
+CRD166,Hyundai Elite i20 - Magna 1.4 AT,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Premium,High,Petrol,High,Automatic,2,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,7.8
+CRD167,Hyundai Elite i20 - Magna Executive 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Manual,2,Basic,No,Manual,Yes,No,No,No,No,1.3
+CRD168,Hyundai Elite i20 - Magna Executive 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,High,Diesel,Medium,Manual,2,Basic,No,Manual,Yes,No,No,No,No,6.5
+CRD169,Hyundai Elite i20 - Sportz 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,Medium,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,5.4
+CRD170,Hyundai Elite i20 - Sportz 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,Color,Mid-Range,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,1.9
+CRD171,Hyundai Elite i20 - Asta 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,0.5
+CRD172,Hyundai Elite i20 - Asta 1.2 (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,High,Petrol,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,1.6
+CRD173,Hyundai Elite i20 - Asta 1.2 Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,4.6
+CRD174,Hyundai Elite i20 - Asta 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,4.1
+CRD175,Hyundai Elite i20 - Asta 1.4 CRDI (O),Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Premium,High,Diesel,Medium,Manual,6,Advanced,Yes,Remote,Yes,Tilt and Telescopic,Yes,No,Rear,9.8
+CRD176,Hyundai Elite i20 - Asta 1.4 CRDI Dual Tone,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt and Telescopic,No,No,Rear,1.3
+CRD177,Hyundai Elite i20 - Era 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Manual,2,No,No,Manual,Yes,No,No,No,No,6.3
+CRD178,Hyundai Elite i20 - Era 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,High,Diesel,Medium,Manual,2,No,No,Manual,Yes,No,No,No,No,8.9
+CRD179,Hyundai Elite i20 - Magna 1.4 AT,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Premium,High,Petrol,High,Automatic,2,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,1.2
+CRD180,Hyundai Elite i20 - Magna Executive 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Manual,2,Basic,No,Manual,Yes,No,No,No,No,2.9
+CRD181,Hyundai Elite i20 - Magna Executive 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,High,Diesel,Medium,Manual,2,Basic,No,Manual,Yes,No,No,No,No,8.8
+CRD182,Hyundai Elite i20 - Sportz 1.2,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,Medium,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,7.8
+CRD183,Hyundai Elite i20 - Sportz 1.4 CRDI,Hyundai Elite i20,Up to 5,Hatchback,Hyundai,White,Mid-Range,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,No,No,No,No,7.4
+CRD184,Maruti WagonR - Lxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Low,Manual,0,No,No,Manual,Yes,No,No,No,No,8.8
+CRD185,Maruti WagonR - Lxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Low,Manual,2,No,Yes,Manual,Yes,No,No,No,No,5.3
+CRD186,Maruti WagonR - LXI CNG,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,CNG,High,Manual,0,No,No,Manual,Yes,No,No,No,No,8.8
+CRD187,Maruti WagonR - LXI CNG (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,CNG,High,Manual,2,No,No,Manual,Yes,No,No,No,No,7.2
+CRD188,Maruti WagonR - Vxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,9.4
+CRD189,Maruti WagonR - Vxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,7.2
+CRD190,Maruti WagonR - Vxi AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,2.2
+CRD191,Maruti WagonR - Vxi AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,7.1
+CRD192,Maruti WagonR R 1.0 - VXI+,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,4.8
+CRD193,Maruti WagonR R 1.0 - VXI+ (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,6.1
+CRD194,Maruti WagonR R 1.0 - VXI+ AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,6.1
+CRD195,Maruti WagonR R 1.0 - VXI+ AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Black,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,1
+CRD196,Maruti WagonR - Lxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Low,Manual,0,No,No,Manual,Yes,No,No,No,No,6.3
+CRD197,Maruti WagonR - Lxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Low,Manual,2,No,Yes,Manual,Yes,No,No,No,No,8.2
+CRD198,Maruti WagonR - LXI CNG,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,CNG,High,Manual,0,No,No,Manual,Yes,No,No,No,No,0.7
+CRD199,Maruti WagonR - LXI CNG (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,CNG,High,Manual,2,No,No,Manual,Yes,No,No,No,No,0.6
+CRD200,Maruti WagonR - Vxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,5
+CRD201,Maruti WagonR - Vxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,4.7
+CRD202,Maruti WagonR - Vxi AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,0.7
+CRD203,Maruti WagonR - Vxi AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,8.4
+CRD204,Maruti WagonR R 1.0 - VXI+,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,1.2
+CRD205,Maruti WagonR R 1.0 - VXI+ (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,6.4
+CRD206,Maruti WagonR R 1.0 - VXI+ AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,8.3
+CRD207,Maruti WagonR R 1.0 - VXI+ AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,Color,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,9.6
+CRD208,Maruti WagonR - Lxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Low,Manual,0,No,No,Manual,Yes,No,No,No,No,7.3
+CRD209,Maruti WagonR - Lxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Low,Manual,2,No,Yes,Manual,Yes,No,No,No,No,1.3
+CRD210,Maruti WagonR - LXI CNG,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,CNG,High,Manual,0,No,No,Manual,Yes,No,No,No,No,1.8
+CRD211,Maruti WagonR - LXI CNG (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,CNG,High,Manual,2,No,No,Manual,Yes,No,No,No,No,0.4
+CRD212,Maruti WagonR - Vxi,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,1.4
+CRD213,Maruti WagonR - Vxi ABS,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,0.9
+CRD214,Maruti WagonR - Vxi AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,5.8
+CRD215,Maruti WagonR - Vxi AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,5.6
+CRD216,Maruti WagonR R 1.0 - VXI+,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,0,Basic,No,Remote,Yes,Tilt,No,No,No,0.6
+CRD217,Maruti WagonR R 1.0 - VXI+ (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Entry,Low,Petrol,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,5.4
+CRD218,Maruti WagonR R 1.0 - VXI+ AMT,Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Mid-Range,Low,Petrol,Medium,Automatic,0,Basic,No,Remote,Yes,Tilt,No,No,No,0.9
+CRD219,Maruti WagonR R 1.0 - VXI+ AMT (O),Maruti WagonR,Up to 5,Hatchback,Suzuki,White,Mid-Range,Low,Petrol,Medium,Automatic,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,3.1
+CRD220,Renault KWID - 1.0 RXL,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,9.7
+CRD221,Renault KWID - 1.0 RXL AMT,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Automatic,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,9.8
+CRD222,Renault KWID - 1.0 RXT,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,9.7
+CRD223,Renault KWID - 1.0 RXT AMT Opt,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,6.1
+CRD224,Renault KWID - 1.0 RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,6.7
+CRD225,Renault KWID - CLIMBER 1.0,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,9.6
+CRD226,Renault KWID - CLIMBER 1.0 AMT,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,1
+CRD227,Renault KWID - RXE,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Low,Petrol,High,Manual,0,No,No,No,Yes,No,No,No,No,2.8
+CRD228,Renault KWID - RXL,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Low,Petrol,High,Manual,0,Basic,No,No,Yes,No,No,No,No,8.2
+CRD229,Renault KWID - RXT,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Low,Petrol,High,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,3.8
+CRD230,Renault KWID - RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Low,Petrol,High,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,3
+CRD231,Renault KWID - STD,Renault KWID,Up to 5,Hatchback,Renault,Black,Entry,Low,Petrol,High,No,0,No,No,No,Yes,No,No,No,No,1.3
+CRD232,Renault KWID - 1.0 RXL,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,4.4
+CRD233,Renault KWID - 1.0 RXL AMT,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Automatic,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,0.6
+CRD234,Renault KWID - 1.0 RXT,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,9.3
+CRD235,Renault KWID - 1.0 RXT AMT Opt,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,7.4
+CRD236,Renault KWID - 1.0 RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,1
+CRD237,Renault KWID - CLIMBER 1.0,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,4.4
+CRD238,Renault KWID - CLIMBER 1.0 AMT,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,5
+CRD239,Renault KWID - RXE,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Low,Petrol,High,Manual,0,No,No,No,Yes,No,No,No,No,5.7
+CRD240,Renault KWID - RXL,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Low,Petrol,High,Manual,0,Basic,No,No,Yes,No,No,No,No,7.8
+CRD241,Renault KWID - RXT,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Low,Petrol,High,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,8.2
+CRD242,Renault KWID - RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Low,Petrol,High,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,2
+CRD243,Renault KWID - STD,Renault KWID,Up to 5,Hatchback,Renault,Color,Entry,Low,Petrol,High,No,0,No,No,No,Yes,No,No,No,No,3.4
+CRD244,Renault KWID - 1.0 RXL,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,6.4
+CRD245,Renault KWID - 1.0 RXL AMT,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Automatic,0,Basic + Bluetooth,No,No,Yes,No,No,No,No,5.6
+CRD246,Renault KWID - 1.0 RXT,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,7.4
+CRD247,Renault KWID - 1.0 RXT AMT Opt,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,7.2
+CRD248,Renault KWID - 1.0 RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,9.1
+CRD249,Renault KWID - CLIMBER 1.0,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,5.1
+CRD250,Renault KWID - CLIMBER 1.0 AMT,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Medium,Petrol,Medium,Automatic,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,4.3
+CRD251,Renault KWID - RXE,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Low,Petrol,High,Manual,0,No,No,No,Yes,No,No,No,No,3.6
+CRD252,Renault KWID - RXL,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Low,Petrol,High,Manual,0,Basic,No,No,Yes,No,No,No,No,3.5
+CRD253,Renault KWID - RXT,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Low,Petrol,High,Manual,0,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,8.9
+CRD254,Renault KWID - RXT Opt,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Low,Petrol,High,Manual,1,Basic + Bluetooth,No,Remote,Yes,No,No,No,No,0.9
+CRD255,Renault KWID - STD,Renault KWID,Up to 5,Hatchback,Renault,White,Entry,Low,Petrol,High,No,0,No,No,No,Yes,No,No,No,No,3
+CRD256,Maruti Vitara Brezza - Ldi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Manual,No,Tilt,No,No,No,3.3
+CRD257,Maruti Vitara Brezza - Ldi (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Manual,No,Tilt,No,No,No,6.3
+CRD258,Maruti Vitara Brezza - Vdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,5.6
+CRD259,Maruti Vitara Brezza - VD (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,5.9
+CRD260,Maruti Vitara Brezza - Zdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Premium,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,8
+CRD261,Maruti Vitara Brezza - Zdi Plus,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,2.5
+CRD262,Maruti Vitara Brezza - Zdi Plus Dual Tone,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Black,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,0.3
+CRD263,Maruti Vitara Brezza - Ldi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Manual,No,Tilt,No,No,No,3.6
+CRD264,Maruti Vitara Brezza - Ldi (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Manual,No,Tilt,No,No,No,3.5
+CRD265,Maruti Vitara Brezza - Vdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,8.2
+CRD266,Maruti Vitara Brezza - VD (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,6.3
+CRD267,Maruti Vitara Brezza - Zdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Premium,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,5.2
+CRD268,Maruti Vitara Brezza - Zdi Plus,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,5.8
+CRD269,Maruti Vitara Brezza - Zdi Plus Dual Tone,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,Color,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,2.7
+CRD270,Maruti Vitara Brezza - Ldi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Manual,No,Tilt,No,No,No,5.2
+CRD271,Maruti Vitara Brezza - Ldi (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Manual,No,Tilt,No,No,No,9
+CRD272,Maruti Vitara Brezza - Vdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Mid-Range,Medium,Diesel,Medium,Manual,1,Basic + Bluetooth,No,Remote,Yes,Tilt,No,No,Rear,2.1
+CRD273,Maruti Vitara Brezza - VD (O),Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Mid-Range,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,4.8
+CRD274,Maruti Vitara Brezza - Zdi,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Premium,Medium,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,Rear,2.8
+CRD275,Maruti Vitara Brezza - Zdi Plus,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,0.4
+CRD276,Maruti Vitara Brezza - Zdi Plus Dual Tone,Maruti Vitara Brezza,Up to 5,SUV/MUV,Suzuki,White,Premium,Medium,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,Yes,Rear,2.3
+CRD277,Hyundai Creta - E 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Petrol,Low,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,7
+CRD278,Hyundai Creta - E Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,9.9
+CRD279,Hyundai Creta - E Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,8.1
+CRD280,Hyundai Creta - S 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,0.2
+CRD281,Hyundai Creta - S Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,5.9
+CRD282,Hyundai Creta - S Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,3.9
+CRD283,Hyundai Creta - SX 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,2.2
+CRD284,Hyundai Creta - SX 1.6 CRDI (O),Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,0.5
+CRD285,Hyundai Creta - SX Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.6
+CRD286,Hyundai Creta - SX Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6
+CRD287,Hyundai Creta - SX Plus 1.6 AT Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Petrol,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.1
+CRD288,Hyundai Creta - SX Plus 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.2
+CRD289,Hyundai Creta - SX Plus 1.6 CRDI Dual Tone,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,7.6
+CRD290,Hyundai Creta - SX Plus 1.6 CRDI Spl Edition,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,7.5
+CRD291,Hyundai Creta - SX Plus 1.6 Dual Tone Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Black,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.4
+CRD292,Hyundai Creta - E 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Petrol,Low,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,4.8
+CRD293,Hyundai Creta - E Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,5.3
+CRD294,Hyundai Creta - E Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,7.2
+CRD295,Hyundai Creta - S 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,2.7
+CRD296,Hyundai Creta - S Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,9.5
+CRD297,Hyundai Creta - S Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,8.1
+CRD298,Hyundai Creta - SX 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,5.8
+CRD299,Hyundai Creta - SX 1.6 CRDI (O),Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.8
+CRD300,Hyundai Creta - SX Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.3
+CRD301,Hyundai Creta - SX Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,5
+CRD302,Hyundai Creta - SX Plus 1.6 AT Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Petrol,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,8.2
+CRD303,Hyundai Creta - SX Plus 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,9.2
+CRD304,Hyundai Creta - SX Plus 1.6 CRDI Dual Tone,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,3.2
+CRD305,Hyundai Creta - SX Plus 1.6 CRDI Spl Edition,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,10
+CRD306,Hyundai Creta - SX Plus 1.6 Dual Tone Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,Color,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,7.9
+CRD307,Hyundai Creta - E 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Petrol,Low,Manual,2,No,Yes,Remote,Yes,Tilt,No,No,No,6
+CRD308,Hyundai Creta - E Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Medium,Manual,2,Basic,Yes,Remote,Yes,Tilt,No,No,No,3.8
+CRD309,Hyundai Creta - E Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Petrol,Low,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,7.6
+CRD310,Hyundai Creta - S 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Medium,Manual,2,Basic + Bluetooth,Yes,Remote,Yes,Tilt,No,No,No,0.9
+CRD311,Hyundai Creta - S Plus 1.4 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Medium,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,1.5
+CRD312,Hyundai Creta - S Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,4.2
+CRD313,Hyundai Creta - SX 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,No,No,Rear,3.8
+CRD314,Hyundai Creta - SX 1.6 CRDI (O),Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,6,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,1.6
+CRD315,Hyundai Creta - SX Plus 1.6 Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,8.9
+CRD316,Hyundai Creta - SX Plus 1.6 AT CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,5.1
+CRD317,Hyundai Creta - SX Plus 1.6 AT Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Petrol,Low,Automatic,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,4.1
+CRD318,Hyundai Creta - SX Plus 1.6 CRDI,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.2
+CRD319,Hyundai Creta - SX Plus 1.6 CRDI Dual Tone,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.7
+CRD320,Hyundai Creta - SX Plus 1.6 CRDI Spl Edition,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Diesel,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,6.8
+CRD321,Hyundai Creta - SX Plus 1.6 Dual Tone Petrol,Hyundai Creta,Up to 5,SUV/MUV,Hyundai,White,Premium,High,Petrol,Low,Manual,2,Advanced,Yes,Remote,Yes,Tilt,Yes,No,Rear,3.1

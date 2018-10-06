@@ -1,0 +1,61 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+## Submission Deadline- 8th October'17, 11:00 PM.
+
+### Assignment Topic: Making Election Predictions  
+
+If during the early part of 2014 you had to predict the upcoming Lok Sabha Elections, what would be your predictive model?  (Say you wanted to predict the election outcomes six months before the elections were held)
+
+#### To solve this problem.here are some possible stuff you can think of..
+
+* Identify data sources. This will depend upon what factors you think can determine winning elections
+* Identifying the right technique/techniques to model that data
+* Make predictions, validate and update your model.
+
+#### Submission details:
+
+##### Part 1: Identify the data sources, the variables of interest. Process the data and create a 'clean' data file(s).
+
+Marks distribution: 20.
+
+** What needs to be submitted: **
+* Text file explaining what variables you are choosing and why, the source codes, explanation etc
+* The cleaned data file (s)
+* Relevant r codes if any
+Marks will be awarded based on what factors you think are important in model building, what data sources you identify and finally how the clean data looks. The clean data has to be submitted as CSV (files).
+
+##### Part 2: Develop the model,present a predictive model.
+Marks distribution: 20
+
+** What needs to be submitted: **
+* Text file explaining the model (s), why did you do what you did, model performance et
+* Relevant R codes if any
+
+
+
+## Data Sources are 
+### http://eci.nic.in/eci_main1/ElectionStatistics.aspx
+The above data source will help us in getting candidates electoral inforormation. As the Question asks about "redict the upcoming Lok Sabha Elections" and does not specify id it is at the particular  candidate level or party level. We will assume it as a candidate level and also assume that Candidates are anaounced for by all parties in all constituency.
+
+** We will take the winning information of 2009 and use as one of the predeicting parameter for 2014. **
+
+#### 2009 data : http://eci.nic.in/eci_main/StatisticalReports/candidatewise/GE2009.xls [ Sheets : electors, Cand_Wise ]
+#### 2014 data : http://eci.nic.in/eci_main/StatisticalReports/candidatewise/LS-2014_ElectionResult.xls [Sheets : electors, Cand_Wise ]
+
+#### https://raw.githubusercontent.com/datameet/india-election-data/master/affidavits/myneta.2014.csv
+Criminal Cases,Education,ID,Party,Sno,Total Assets,Total Liabilities,Year,ST_CODE,PC_CODE
+
+#### Source Data
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

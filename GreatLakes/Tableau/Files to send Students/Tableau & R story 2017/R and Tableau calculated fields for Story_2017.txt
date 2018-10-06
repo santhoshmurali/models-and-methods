@@ -1,0 +1,61 @@
+
+OUTLIERS:
+IF SCRIPT_REAL("library(pracma); a <- rep(1, length(.arg1)); a[findpeaks(.arg1,threshold=quantile(.arg1,.99),sortstr=FALSE)[,2]]=0;a;", SUM([Sales])) == 0
+THEN "Outlier"
+ELSE "OK"
+END
+
+Prediction:
+SCRIPT_REAL(
+"Profit <- .arg1;Sales <- .arg2; Discount <- .arg3; Freight <- .arg4;
+fit <- lm(Profit ~ Sales + Discount + Freight)
+newdata = data.frame(Sales=.arg2,Discount=.arg3,Freight = .arg4)
+predict(fit,newdata)",
+
+SUM([Profit]),
+SUM([Sales]),
+AVG([Discount offered]),
+AVG([Freight Expenses])
+)
+
+
+
+Recency
+Rank_Percentile(min(datediff('day',[Order Date],today())),'asc')
+
+Frequency
+Rank_Percentile(sum([Number of Records]),'asc')
+
+Monetary
+Rank_Percentile(sum([Sales]),'asc')
+
+
+Recency_Quintile
+if [Recency] <=0.2 then 1 ELSEIF
+[Recency]>0.2 AND [Recency]<= 0.4 THEN 2 ELSEIF
+[Recency]>0.4 AND [Recency]<= 0.6 THEN 3 ELSEIF
+[Recency]>0.6 AND [Recency]<= 0.8 THEN 4 ELSEIF
+[Recency]>0.8 AND [Recency]<= 1 THEN 5 END
+
+Frequency_Quintile
+if [Frequency] <=0.2 then 1 ELSEIF
+[Frequency]>0.2 AND [Frequency]<= 0.4 THEN 2 ELSEIF
+[Frequency]>0.4 AND [Frequency]<= 0.6 THEN 3 ELSEIF
+[Frequency]>0.6 AND [Frequency]<= 0.8 THEN 4 ELSEIF
+[Frequency]>0.8 AND [Frequency]<= 1 THEN 5 END
+
+Monetary_Quintile
+if [Monetary] <=0.2 then 1 ELSEIF
+[Monetary]>0.2 AND [Monetary]<= 0.4 THEN 2 ELSEIF
+[Monetary]>0.4 AND [Monetary]<= 0.6 THEN 3 ELSEIF
+[Monetary]>0.6 AND [Monetary]<= 0.8 THEN 4 ELSEIF
+[Monetary]>0.8 AND [Monetary]<= 1 THEN 5 END
+
+RFM SCORE
+([Recency_Quintile]*100) + ([Frequency_Quintile]*10) + ([Monetary_Quintile])
+
+CLUSTER
+SCRIPT_INT(
+'set.seed(42);result <- kmeans(data.frame(.arg1,.arg2,.arg3,.arg4), .arg5[1]);result$cluster;', 
+max([Sales]), SUM([Profit]),min([Freight Expenses]),MIN([Discount offered]),3)
+

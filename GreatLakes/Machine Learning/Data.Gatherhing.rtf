@@ -1,0 +1,144 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red6\green0\blue135;\red158\green0\blue3;\red62\green62\blue62;
+\red0\green0\blue0;\red181\green118\blue12;\red11\green66\blue19;}
+{\*\expandedcolortbl;;\cssrgb\c2500\c8500\c60000;\cssrgb\c69000\c7500\c0;\cssrgb\c31200\c30900\c30900;
+\cssrgb\c0\c0\c0;\cssrgb\c76500\c53500\c3500;\cssrgb\c2000\c32000\c9500;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx528\tx1056\tx1584\tx2112\tx2640\tx3168\tx3696\tx4224\tx4752\tx5280\tx5808\tx6337\tx6865\tx7393\tx7921\tx8449\tx8977\tx9505\tx10033\tx10561\tx11089\tx11617\tx12145\tx12674\tx13202\tx13730\tx14258\tx14786\tx15314\tx15842\tx16370\tx16898\tx17426\tx17954\tx18483\tx19011\tx19539\tx20067\tx20595\tx21123\tx21651\tx22179\tx22707\tx23235\tx23763\tx24291\tx24820\tx25348\tx25876\tx26404\tx26932\tx27460\tx27988\tx28516\tx29044\tx29572\tx30100\tx30628\tx31157\tx31685\tx32213\tx32741\tx33269\tx33797\li80\fi-80\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 setwd( \cf3 "/Users/bappa/Desktop/My.Folder/Machine Learning"\cf2 )\
+\cf4 #We will merge 2 Excel Files\
+# Election 2012 and 2017\
+#However, the Constituency names may have changed\
+\cf2 \
+\
+\cf5 UP.2017.unmatched\cf2 <-read.csv(file.choose(), \cf5 header\cf2 =\cf6 T\cf2 )\
+\cf5 UP.2012.all\cf2 <-read.csv(file.choose(), \cf5 header\cf2 =\cf6 T\cf2 )\
+\
+\cf5 UP.2017.unmatched\cf2 $\cf5 AC\cf2 <-\cf5 UP.2017.unmatched\cf2 $\cf5 EC.2017\cf2 \
+\cf5 UP.2012.all\cf2 $\cf5 AC\cf2 <-\cf5 UP.2012.all\cf2 $\cf5 AC_NAME\cf2 \
+\cf4 #install.packages('stringdist')\
+\cf2 library(\cf5 stringdist\cf2 )\
+\cf4 #We will only use LV,DL,JACCARD and JARROW\
+\cf2 \
+\cf5 distance.methods\cf2 <-c(\cf3 'lv'\cf2 ,\cf3 'dl'\cf2 ,\cf3 'jaccard'\cf2 ,\cf3 'jw'\cf2 )\
+\cf5 dist.methods\cf2 <-list()\
+\cf6 for\cf2 (\cf5 m\cf2  \cf6 in\cf2  \cf7 1\cf2 :length(\cf5 distance.methods\cf2 ))\
+\{\
+  \cf5 dist.name.enh\cf2 <-matrix(\cf6 NA\cf2 , \cf5 ncol\cf2  = length(\cf5 UP.2017.unmatched\cf2 $\cf5 AC\cf2 ),\cf5 nrow\cf2  = length(\cf5 UP.2012.all\cf2 $\cf5 AC\cf2 ))\
+  \cf6 for\cf2 (\cf5 i\cf2  \cf6 in\cf2  \cf7 1\cf2 :length(\cf5 UP.2017.unmatched\cf2 $\cf5 AC\cf2 )) \{\
+    \cf6 for\cf2 (\cf5 j\cf2  \cf6 in\cf2  \cf7 1\cf2 :length(\cf5 UP.2012.all\cf2 $\cf5 AC\cf2 )) \{ \
+      \cf5 dist.name.enh\cf2 [\cf5 j\cf2 ,\cf5 i\cf2 ]<-stringdist(tolower(\cf5 UP.2017.unmatched\cf2 [\cf5 i\cf2 ,]$\cf5 AC\cf2 ),tolower(\cf5 UP.2012.all\cf2 [\cf5 j\cf2 ,]$\cf5 AC\cf2 ),\
+                                     \cf5 method\cf2  = \cf5 distance.methods\cf2 [\cf5 m\cf2 ])      \
+      \cf4 #adist.enhance(UP.Match[i,]$name,UP_Crime[j,]$name)\
+\cf2     \}  \
+  \}\
+  \cf5 dist.methods\cf2 [[\cf5 distance.methods\cf2 [\cf5 m\cf2 ]]]<-\cf5 dist.name.enh\cf2 \
+\}\
+\
+\cf5 match.s1.s2.enh\cf2 <-\cf6 NULL\cf2 \
+\cf6 for\cf2 (\cf5 m\cf2  \cf6 in\cf2  \cf7 1\cf2 :length(\cf5 dist.methods\cf2 ))\
+\{\
+  \
+  \cf5 dist.matrix.1\cf2 <-as.matrix(\cf5 dist.methods\cf2 [[\cf5 distance.methods\cf2 [\cf5 m\cf2 ]]])\
+  \cf5 min.name.enh\cf2 <-apply(\cf5 dist.matrix.1\cf2 , \cf7 1\cf2 , \cf5 base\cf2 ::\cf5 min\cf2 )\
+  \cf6 for\cf2 (\cf5 i\cf2  \cf6 in\cf2  \cf7 1\cf2 :nrow(\cf5 dist.matrix.1\cf2 ))\
+  \{\
+    \cf5 s2.i\cf2 <-match(\cf5 min.name.enh\cf2 [\cf5 i\cf2 ],\cf5 dist.matrix.1\cf2 [\cf5 i\cf2 ,])\
+    \cf5 s1.i\cf2 <-\cf5 i\cf2 \
+    \cf5 match.s1.s2.enh\cf2 <-rbind(data.frame(\cf5 s2.i\cf2 =\cf5 s2.i\cf2 ,\cf5 s1.i\cf2 =\cf5 s1.i\cf2 ,\cf5 s2name\cf2 =\cf5 UP.2017.unmatched\cf2 [\cf5 s2.i\cf2 ,]$\cf5 AC\cf2 , \
+                                      \cf5 s1name\cf2 =\cf5 UP.2012.all\cf2 [\cf5 s1.i\cf2 ,]$\cf5 AC\cf2 , \cf5 adist\cf2 =\cf5 min.name.enh\cf2 [\cf5 i\cf2 ],\
+                                      \cf5 method\cf2 =\cf5 distance.methods\cf2 [\cf5 m\cf2 ]),\cf5 match.s1.s2.enh\cf2 )\
+  \}\
+\}\
+\
+library(\cf5 reshape2\cf2 )\
+\cf5 matched.names.matrix.17with12\cf2 <-dcast(\cf5 match.s1.s2.enh\cf2 ,\cf5 s2.i\cf2 +\cf5 s1.i\cf2 +\cf5 s2name\cf2 +\cf5 s1name\cf2 ~\cf5 method\cf2 , \cf5 value.var\cf2  = \cf3 "adist"\cf2 )\
+View(\cf5 matched.names.matrix.17with12\cf2 )\
+\cf4 #Looks like jw does well\
+\cf2 \
+write.csv(\cf5 matched.names.matrix.17with12\cf2 ,\cf3 "matched.name.matrix.17with12.csv"\cf2 )\
+\
+\
+\cf4 ##################################\
+#Clean manually, merge and create the file EC.csv\
+#Next we import data from MyNeta.com\
+\cf2 \
+\cf4 # Get data from Myneta\
+\cf2 install.packages(\cf3 "RCurl"\cf2 )\
+install.packages(\cf3 "XML"\cf2 )\
+install.packages(\cf3 "data.table"\cf2 )\
+\
+\
+library(\cf5 RCurl\cf2 )\
+library(\cf5 XML\cf2 )\
+library(\cf5 data.table\cf2 )\
+\
+\cf4 #Extract the all candidate data\
+\cf5 urlUP\cf2 <-\cf3 "http://myneta.info/uttarpradesh2017/index.php?action=summary&subAction=candidates_analyzed&sort=candidate#summary"\cf2 \
+\cf4 #Our table is the third table\
+\cf5 candtableUP\cf2 <-readHTMLTable(\cf5 urlUP\cf2 ,\cf5 which\cf2 =\cf7 3\cf2 )\
+\
+str(\cf5 candtableUP\cf2 )\
+\cf4 #remove unnecessary rows and columns\
+\cf5 candUP\cf2 <-\cf5 candtableUP\cf2 [\cf7 3\cf2 :\cf7 4825\cf2 ,\cf7 2\cf2 :\cf7 7\cf2 ]\
+str(\cf5 candUP\cf2 )\
+\cf4 #candUP has Total Assets that are all garbaged\
+\cf5 cand_UP\cf2 <-as.data.table(\cf5 candUP\cf2 )\
+\
+\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 <-as.character(\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 )\
+\cf6 for\cf2  (\cf5 i\cf2  \cf6 in\cf2  \cf7 1\cf2 :nrow(\cf5 cand_UP\cf2 ))\{\
+  \cf6 if\cf2 (\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 [\cf5 i\cf2 ]==\cf3 "Nil"\cf2 )\{\
+    \cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 [\cf5 i\cf2 ]=\cf7 0\cf2 \
+  \}\
+  \cf6 else\cf2 \{\
+    \cf5 str\cf2 <-\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 [\cf5 i\cf2 ]\
+    \cf5 strn\cf2 <-gsub(\cf3 ","\cf2 ,\cf3 ""\cf2 ,substr(\cf5 str\cf2 ,\cf5 start\cf2  = \cf7 4\cf2 ,\cf5 stop\cf2 =regexpr(\cf3 "~"\cf2 , \cf5 str\cf2 )[\cf7 1\cf2 ]\cf7 -2\cf2 ))\
+    \cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 [\cf5 i\cf2 ]<-\cf5 strn\cf2 \
+  \}\
+\}\
+\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 <-as.numeric(\cf5 cand_UP\cf2 $\cf3 `Total Assets`\cf2 )\
+str(\cf5 cand_UP\cf2 )\
+\cf4 #Define merging by\
+\cf5 cand_UP\cf2 $\cf5 cand\cf2 <-\cf5 cand_UP\cf2 $\cf3 `Candidate<U+2207>`\cf2 \
+\cf5 cand_UP\cf2 $\cf5 const\cf2 <-\cf5 cand_UP\cf2 $\cf3 `Constituency `\cf2 \
+\cf5 cand_UP\cf2 $\cf5 party\cf2 <-\cf5 cand_UP\cf2 $\cf3 `Party `\cf2 \
+\
+\cf4 #Let us do that for Serious Crimes\
+\cf5 urlser\cf2 <-\cf3 "http://myneta.info/uttarpradesh2017/index.php?action=summary&subAction=serious_crime&sort=candidate#summary"\cf2 \
+\
+\cf5 candtableser\cf2 <-readHTMLTable(\cf5 urlser\cf2 ,\cf5 which\cf2 =\cf7 3\cf2 )\
+\cf5 candser\cf2 <-\cf5 candtableser\cf2 [\cf7 3\cf2 :\cf7 706\cf2 ,\cf7 2\cf2 :\cf7 4\cf2 ]\
+\cf5 cand_ser\cf2 <-as.data.table(\cf5 candser\cf2 )\
+str(\cf5 cand_ser\cf2 )\
+\cf4 #Define merging by\
+\cf5 cand_ser\cf2 $\cf5 cand\cf2 <-\cf5 cand_ser\cf2 $\cf3 `Candidate<U+2207>`\cf2 \
+\cf5 cand_ser\cf2 $\cf5 const\cf2 <-\cf5 cand_ser\cf2 $\cf3 `Constituency `\cf2 \
+\cf5 cand_ser\cf2 $\cf5 party\cf2 <-\cf5 cand_ser\cf2 $\cf3 `Party `\cf2 \
+\cf5 cand_ser\cf2 $\cf5 ser\cf2 <- \cf7 1\cf2 \
+\
+\cf4 #Now Merge with CandUP\
+\cf5 data\cf2 <-merge(\cf5 cand_UP\cf2 ,\cf5 cand_ser\cf2 ,\cf5 by\cf2 =c(\cf3 "cand"\cf2 ,\cf3 "const"\cf2 , \cf3 "party"\cf2 ), \cf5 all\cf2 =\cf6 TRUE\cf2 )\
+\cf5 data\cf2 <-subset(\cf5 data\cf2 , \cf5 select\cf2 =c(\cf7 1\cf2 :\cf7 3\cf2 ,\cf7 7\cf2 :\cf7 9\cf2 ,\cf7 13\cf2 ))\
+\cf5 data\cf2 $\cf5 ser\cf2 [is.na(\cf5 data\cf2 $\cf5 ser\cf2 )] <- \cf7 0\cf2 \
+mean(\cf5 data\cf2 $\cf5 ser\cf2 )\
+\
+\cf4 #Let's see the data\
+\cf2 View(\cf5 data\cf2 )\
+\cf4 #Trim it further (not necessary though)\
+#data.MyNeta<-subset(data, select=c(1:3,7:9,13))\
+\cf2 write.csv(\cf5 data\cf2 , \cf5 file\cf2  = \cf3 "MyNeta.csv"\cf2 )\
+\cf4 #Now let us merge it with EC\
+\cf2 \
+\cf5 EC\cf2 <-read.csv(file.choose(), \cf5 header\cf2 =\cf6 T\cf2 )\
+\cf4 #Create common fields to merge\
+\cf5 EC\cf2 $\cf5 cand\cf2 <-\cf5 EC\cf2 $\cf5 Name\cf2 \
+\cf5 EC\cf2 $\cf5 const\cf2 <-\cf5 EC\cf2 $\cf5 AC_NAME\cf2 \
+\cf5 EC\cf2 $\cf5 party\cf2 <-\cf5 EC\cf2 $\cf5 Party\cf2 \
+\
+\cf5 UP.All\cf2 <-merge(\cf5 EC\cf2 ,\cf5 data\cf2 ,\cf5 by\cf2 =c(\cf3 "cand"\cf2 ,\cf3 "const"\cf2 , \cf3 "party"\cf2 ), \cf5 all\cf2 =\cf6 TRUE\cf2 )\
+\cf4 #Problem?\
+\cf5 UP.Analysis\cf2 <-merge(\cf5 EC\cf2 ,\cf5 data\cf2 ,\cf5 by\cf2 =c(\cf3 "const"\cf2 , \cf3 "party"\cf2 ), \cf5 all\cf2 =\cf6 TRUE\cf2 )\
+\
+}

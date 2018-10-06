@@ -1,0 +1,2223 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0615.2100                               -->
+<workbook source-build='10.3.1 (10300.17.0615.2100)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Coffee File)' inline='true' name='federated.1ylpjn51okk0rr19d7fq711s5uze' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coffee File' name='excel-direct.060uzfq17e2pjv18pg79d03n83q5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Home/Work/GreatLakes/Tableau/Files to send Students/Coffee Dashboard/Coffee File.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.060uzfq17e2pjv18pg79d03n83q5' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:S4249:no:A1:S4249:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Area Code' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Market' ordinal='2' />
+            <column datatype='string' name='Market Size' ordinal='3' />
+            <column datatype='string' name='Product' ordinal='4' />
+            <column datatype='string' name='Product Type' ordinal='5' />
+            <column datatype='string' name='State' ordinal='6' />
+            <column datatype='string' name='Type' ordinal='7' />
+            <column datatype='integer' name='Budget COGS' ordinal='8' />
+            <column datatype='integer' name='Budget Margin' ordinal='9' />
+            <column datatype='integer' name='Budget Profit' ordinal='10' />
+            <column datatype='integer' name='Budget Sales' ordinal='11' />
+            <column datatype='integer' name='Cogs' ordinal='12' />
+            <column datatype='integer' name='Inventory' ordinal='13' />
+            <column datatype='integer' name='Margin' ordinal='14' />
+            <column datatype='integer' name='Marketing' ordinal='15' />
+            <column datatype='integer' name='Profit' ordinal='16' />
+            <column datatype='integer' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Total Expenses' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Area Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Area Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Market]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Market</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market Size</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Market Size]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Market Size</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Product Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget COGS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budget COGS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Budget COGS</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budget Margin]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Budget Margin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budget Profit]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Budget Profit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budget Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Budget Sales</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cogs]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Cogs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inventory</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inventory]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Inventory</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Margin]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Margin</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marketing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Marketing]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Marketing</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Expenses]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Total Expenses</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:S4249:no:A1:S4249:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product Type]' derivation='None' name='[none:Product Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Area Code)' hidden='true' name='[Action (Area Code)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Area Code]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Market)' hidden='true' name='[Action (Market)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Market]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Product Type)' hidden='true' name='[Action (Product Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Product Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Product)' hidden='true' name='[Action (Product)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Product]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.386179' measure-ordering='alphabetic' measure-percentage='0.613821' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Market:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;South&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;East&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Earl Grey&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Amaretto&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Columbian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Regular Espresso&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Green Tea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Darjeeling&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Caffe Latte&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Decaf Espresso&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lemon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Decaf Irish Cream&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Caffe Mocha&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mint&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chamomile&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Coffee&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Tea&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Herbal Tea&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Espresso&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[AreaCode].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 10 (generated)' name='[Action10]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='State_w' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 11 (generated)' name='[Action11]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='Market_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 12 (generated)' name='[Action12]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='MarketSize_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 13 (generated)' name='[Action13]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='PrductType_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 14 (generated)' name='[Action14]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='Product_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 15 (generated)' name='[Action15]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='Type_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 16 (generated)' name='[Action16]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='Date_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='AreaCode_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='Market_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='State_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='Product_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='ProductType_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='Type_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='MarketSize_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='All Bars' type='sheet' worksheet='Date_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='All Bars' />
+      </command>
+    </action>
+    <action caption='Filter 9 (generated)' name='[Action9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='MultiChart' type='sheet' worksheet='AreaCode_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='MultiChart' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='AreaCode_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Area Code]' derivation='None' name='[none:Area Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Area Code:ok]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Area Code:ok]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='AreaCode_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Area Code]' derivation='None' name='[none:Area Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Longitude (generated)]' field-type='quantitative' max='-8255238.9973581349' min='-13907266.432865299' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Latitude (generated)]' field-type='quantitative' max='5905984.5603043642' min='3050836.847219097' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Area Code:ok]' />
+              <size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Latitude (generated)]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Date_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[yr:Date:ok]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[yr:Date:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Date_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[yr:Date:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='MarketSize_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market Size]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Market Size]' derivation='None' name='[none:Market Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market Size:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='MarketSize_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market Size]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Market Size]' derivation='None' name='[none:Market Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market Size:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Market_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market:nk]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Market_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market:nk]' />
+              <wedge-size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+              <size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='PrductType_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Product Type]' derivation='None' name='[none:Product Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='ProductType_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Product Type]' derivation='None' name='[none:Product Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product Type:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Product_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Product_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+              <text column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]' />
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='State_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:State:nk]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:State:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='State_w'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:State:nk]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+              <text column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Type_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]'>
+            <groupfilter function='level-members' level='[Area Code]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Type:nk]' direction='DESC' using='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Area Code)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#fb1616</color>
+                <color>#f82d2d</color>
+                <color>#f44242</color>
+                <color>#f15757</color>
+                <color>#ed6c6c</color>
+                <color>#ea7f7f</color>
+                <color>#e69292</color>
+                <color>#e3a5a5</color>
+                <color>#dfb7b7</color>
+                <color>#dcc8c8</color>
+                <color>#d9d9d9</color>
+                <color>#c3d1be</color>
+                <color>#afcaa5</color>
+                <color>#9cc38e</color>
+                <color>#89bc77</color>
+                <color>#78b562</color>
+                <color>#67ad4f</color>
+                <color>#58a63c</color>
+                <color>#499f2b</color>
+                <color>#3c981b</color>
+                <color>#2f910d</color>
+                <color>#248a00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Type:nk]</rows>
+        <cols>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Type_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Coffee File)' name='federated.1ylpjn51okk0rr19d7fq711s5uze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylpjn51okk0rr19d7fq711s5uze'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]'>
+            <groupfilter function='level-members' level='[Market]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]'>
+            <groupfilter function='member' level='[Product Type]' member='&quot;Coffee&quot;' user:ui-action-filter='[Action13]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Market)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (State)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product Type)]</column>
+            <column>[federated.1ylpjn51okk0rr19d7fq711s5uze].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Type:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='All Bars'>
+      <style />
+      <size maxheight='1000' maxwidth='1155' minheight='1000' minwidth='1155' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='1' name='AreaCode_1' w='25000' x='0' y='0' />
+          <zone h='40000' id='3' name='Product_1' w='50000' x='50000' y='0' />
+          <zone h='20900' id='4' name='Market_1' w='25000' x='25000' y='0' />
+          <zone h='53900' id='5' name='State_1' w='25000' x='25000' y='20900' />
+          <zone h='23500' id='6' name='ProductType_1' w='50000' x='50000' y='40000' />
+          <zone h='18250' id='7' name='Type_1' w='50000' x='50000' y='63500' />
+          <zone h='18250' id='8' name='MarketSize_1' w='50000' x='50000' y='81750' />
+          <zone h='25200' id='9' name='Date_1' w='25000' x='25000' y='74800' />
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='MultiChart'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='21' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+              <zone h='100000' id='3' type='layout-basic' w='86147' x='0' y='0'>
+                <zone h='50000' id='1' name='AreaCode_2' w='43074' x='0' y='0' />
+                <zone h='50000' id='7' name='State_w' w='43073' x='43074' y='0' />
+                <zone h='50000' id='9' name='Product_2' w='21537' x='0' y='50000' />
+                <zone h='50000' id='11' name='PrductType_2' w='21537' x='21537' y='50000' />
+                <zone h='25000' id='14' name='MarketSize_2' w='21536' x='43074' y='50000' />
+                <zone h='25000' id='16' name='Type_2' w='21536' x='43074' y='75000' />
+                <zone h='25000' id='17' name='Market_2' w='21537' x='64610' y='50000' />
+                <zone h='25000' id='19' name='Date_2' w='21537' x='64610' y='75000' />
+              </zone>
+              <zone fixed-size='160' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='13853' x='86147' y='0'>
+                <zone h='11460' id='8' name='State_w' pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' type='color' w='13853' x='86147' y='0' />
+                <zone h='14285' id='10' name='Product_2' pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]' type='color' w='13853' x='86147' y='11460' />
+                <zone h='7640' id='12' name='PrductType_2' pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product Type:nk]' type='color' w='13853' x='86147' y='25745' />
+                <zone h='17607' id='18' name='Market_2' pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market:nk]' type='color' w='13853' x='86147' y='33385' />
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='AreaCode_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Market_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='MarketSize_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Product_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='ProductType_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='State_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Type_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Date_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='All Bars'>
+      <viewpoints>
+        <viewpoint name='AreaCode_1' />
+        <viewpoint name='Date_1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='MarketSize_1' />
+        <viewpoint name='Market_1' />
+        <viewpoint name='ProductType_1' />
+        <viewpoint name='Product_1' />
+        <viewpoint name='State_1' />
+        <viewpoint name='Type_1' />
+      </viewpoints>
+      <active id='3' />
+    </window>
+    <window class='dashboard' maximized='true' name='MultiChart'>
+      <viewpoints>
+        <viewpoint name='AreaCode_2'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Date_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='MarketSize_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Market_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='PrductType_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Product_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='State_w' />
+        <viewpoint name='Type_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+    </window>
+    <window class='worksheet' name='AreaCode_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Market_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Market:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Date_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='MarketSize_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Product_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='PrductType_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[none:Product Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='State_w'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ylpjn51okk0rr19d7fq711s5uze].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Type_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>

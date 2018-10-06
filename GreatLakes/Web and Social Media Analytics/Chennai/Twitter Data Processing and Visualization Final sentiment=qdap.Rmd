@@ -1,0 +1,264 @@
+---
+title: "Text Mining of Twitter data"
+author: "VokseDigital"
+date: "8 September 2016"
+output: html_document
+---
+
+Use Twitter data on 2016 USOPEN (tennis) to demonstrate text mining and visualization techniques including text cleanup, word cloud, frequent terms, topic modelling and sentiment analysis 
+
+```{r setup, include=FALSE}
+#Setup the environment
+
+rm(list=ls())
+library(SnowballC)
+library(tm)
+library(ggplot2)
+library(RColorBrewer)
+library(wordcloud)
+library(topicmodels)
+library(data.table)
+library(stringi)
+#install.packages("bitops")
+library(devtools)
+#install_github('sentiment140', 'okugami79')
+# install_github('sentiment140', 'okugami79') before using sentiment pkg
+library(sentiment)
+
+library(qdap)
+library(dplyr)
+library(streamgraph)
+```
+
+#####Read Twitter Data
+
+```{r}
+# Set directory and read data
+setwd("C:/Home/Work/GreatLakes/Web and Social Media Analytics/Chennai")
+tweets.df <- read.csv("TwitterData.csv")
+
+# Convert char date to correct date format
+tweets.df$created <- as.Date(tweets.df$created, format= "%d-%m-%y")
+
+```
+
+#####Cleaning the text data by removing links, tags and delimiters.   
+#####Build a Corpus, and specify the location to be the character Vectors  
+```{r}
+
+# Remove character string between < >
+tweets.df$text <- genX(tweets.df$text, " <", ">")
+
+# Create document corpus with tweet text
+myCorpus<- Corpus(VectorSource(tweets.df$text)) 
+
+```
+
+#####convert to Lowercase  
+```{r}
+myCorpus <- tm_map(myCorpus, content_transformer(stri_trans_tolower))
+```
+
+#####Remove the links (URLs)  
+```{r}
+removeURL <- function(x) gsub("http[^[:space:]]*", "", x)  
+myCorpus <- tm_map(myCorpus, content_transformer(removeURL))
+```
+
+#####Remove anything except the english language and space  
+```{r}
+removeNumPunct <- function(x) gsub("[^[:alpha:][:space:]]*", "", x)   
+myCorpus <- tm_map(myCorpus, content_transformer(removeNumPunct))
+```
+
+#####Remove Stopwords  
+```{r}
+myStopWords<- c((stopwords('english')),c("rt", "use", "used", "via", "amp"))
+myCorpus<- tm_map(myCorpus,removeWords , myStopWords) 
+```
+
+#####Remove Single letter words  
+```{r}
+removeSingle <- function(x) gsub(" . ", " ", x)   
+myCorpus <- tm_map(myCorpus, content_transformer(removeSingle))
+```
+
+#####Remove Extra Whitespaces  
+```{r}
+myCorpus<- tm_map(myCorpus, stripWhitespace) 
+```
+
+#####keep a copy of "myCorpus" for stem completion later  
+```{r}
+myCorpusCopy<- myCorpus
+```
+
+#####Stem words in the corpus 
+
+```{r Turning into Corpus, include=TRUE, warning=FALSE}
+myCorpus<-tm_map(myCorpus, stemDocument)
+writeLines(strwrap(myCorpus[[250]]$content,60))
+```
+
+#####Function to correct/complete the text after stemming
+
+```{r Datacorrection}
+stemCompletion2 <- function(x,dictionary) {
+  x <- unlist(strsplit(as.character(x)," "))
+  x <- x[x !=""]
+  x <- stemCompletion(x, dictionary = dictionary)
+  x <- paste(x, sep="", collapse=" ")
+  PlainTextDocument(stripWhitespace(x))
+}
+```
+
+#####Stem Complete and Display the same tweet above with the completed and corrected text. 
+
+```{r display the tweet}
+myCorpus <- lapply(myCorpus, stemCompletion2, dictionary=myCorpusCopy)
+myCorpus <- Corpus(VectorSource(myCorpus))
+writeLines(strwrap(myCorpus[[250]]$content, 60))
+
+```
+
+#####Correcting mis-splet words
+
+```{r Word correction}
+wordFreq <- function(corpus,word)
+{
+  results<- lapply(corpus,
+                   function(x){ grep(as.character(x),pattern = paste0("\\<", word))})
+  sum(unlist(results))
+}
+n.tenni<- wordFreq(myCorpusCopy, "tenni")
+n.tennis <- wordFreq(myCorpusCopy, "tennis")
+cat(n.tenni, n.tennis)
+```
+
+#####Used to replace words with the proper ones
+```{r word replacement}
+replaceWord <- function(corpus, oldword, newword)
+{
+  tm_map(corpus, content_transformer(gsub), pattern=oldword, replacement=newword)
+  }
+myCorpus<- replaceWord(myCorpus, "tenni", "tennis")
+
+tdm<- TermDocumentMatrix(myCorpus, control= list(wordLengths= c(1, Inf)))
+tdm
+idx <- which(dimnames(tdm)$Terms %in% c("usopen", "grandslam"))
+as.matrix(tdm[idx,21:60])
+```
+
+#####Find the terms used most frequently
+```{r Term frequency}
+(freq.terms <- findFreqTerms(tdm, lowfreq = 50))
+term.freq <- rowSums(as.matrix(tdm))
+term.freq <- subset(term.freq, term.freq > 50)
+df <- data.frame(term = names(term.freq), freq= term.freq)
+```
+
+#####plotting the graph of frequent terms
+```{r Graph}
+ggplot(df, aes(reorder(term, freq),freq)) + theme_bw() + geom_bar(stat = "identity")  + coord_flip() +labs(list(title="Term Frequency Chart", x="Terms", y="Term Counts")) 
+```
+
+#####calculate the frequency of words and sort it by frequency and setting up the Wordcloud
+
+```{r WordCloud, warning=FALSE}
+word.freq <-sort(rowSums(as.matrix(tdm)), decreasing= F)
+pal<- brewer.pal(8, "Dark2")
+wordcloud(words = names(word.freq), freq = word.freq, min.freq = 2, random.order = F, colors = pal, max.words = 100)
+
+# Identify and plot word correlations. For example - love
+WordCorr <- apply_as_df(myCorpus[1:500], word_cor, word = "love", r=.25)
+plot(WordCorr)
+
+qheat(vect2df(WordCorr[[1]], "word", "cor"), values=TRUE, high="red",
+digits=2, order.by ="cor", plot = FALSE) + coord_flip()
+
+# Messages with word - love
+df <- data.frame(text=sapply(myCorpus, `[[`, "content"), stringsAsFactors=FALSE)
+head(unique(df[grep("love", df$text), ]), n=10)
+
+```
+
+##### Find association with a specific keyword in the tweets - usopen, grandslam
+```{r Find Association}
+findAssocs(tdm, "usopen", 0.2)
+findAssocs(tdm, "grandslam", 0.2)
+```
+
+##### Topic Modelling to identify latent/hidden topics using LDA technique
+```{r Topic Modelling}
+dtm <- as.DocumentTermMatrix(tdm)
+
+rowTotals <- apply(dtm , 1, sum)
+
+NullDocs <- dtm[rowTotals==0, ]
+dtm   <- dtm[rowTotals> 0, ]
+
+if (length(NullDocs$dimnames$Docs) > 0) {
+tweets.df <- tweets.df[-as.numeric(NullDocs$dimnames$Docs),]
+}
+
+lda <- LDA(dtm, k = 5) # find 5 topic
+term <- terms(lda, 7) # first 7 terms of every topic
+(term <- apply(term, MARGIN = 2, paste, collapse = ", "))
+
+topics<- topics(lda)
+topics<- data.frame(date=(tweets.df$created), topic = topics)
+qplot (date, ..count.., data=topics, geom ="density", fill= term[topic], position="stack")
+```
+
+#####Sentiment Analysis to identify positive/negative tweets
+
+```{r Sentiment Analysis}
+# Use qdap polarity function to detect sentiment
+sentiments <- polarity(tweets.df$text)
+
+sentiments <- data.frame(sentiments$all$polarity)
+
+sentiments[["polarity"]] <- cut(sentiments[[ "sentiments.all.polarity"]], c(-5,0.0,5), labels = c("negative","positive"))
+
+table(sentiments$polarity)
+
+```
+
+#####Sentiment Plot by date
+```{r Sentiment Plot}
+sentiments$score<- 0
+sentiments$score[sentiments$polarity == "positive"]<-1
+sentiments$score[sentiments$polarity == "negative"]<- -1
+sentiments$date <- as.IDate(tweets.df$created)
+result <- aggregate(score ~ date, data = sentiments, sum)
+plot(result, type = "l")
+```
+
+##### Stream Graph for sentiment by date
+```{r Stream Graph plotting}
+
+Data<-data.frame(sentiments$polarity)
+colnames(Data)[1] <- "polarity"
+Data$Date <- tweets.df$created
+Data$text <- NULL
+Data$Count <- 1
+```
+
+```{r}
+graphdata <- aggregate(Count ~ polarity + as.character.Date(Date),data=Data,FUN=length)
+colnames(graphdata)[2] <- "Date"
+str(graphdata)
+```
+##### StreamGraph
+```{r Type III,warning=FALSE, echo=FALSE}
+
+graphdata %>%
+streamgraph(polarity, Count, Date) %>%
+  sg_axis_x(20) %>%
+  sg_axis_x(1, "Date","%d-%b") %>%
+  sg_legend(show=TRUE, label="Polarity: ")
+
+```
+
+
+

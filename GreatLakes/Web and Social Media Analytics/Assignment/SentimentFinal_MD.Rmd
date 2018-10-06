@@ -1,0 +1,267 @@
+---
+title: "Sentiment Analysis - Text Mining"
+author: "Group 9"
+date: "September 17, 2017"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Setting up the Environment and Initiating Required Libraries
+```{r}
+#need twitter data
+#install.packages("twitteR")
+library(twitteR)
+
+# for finding Geo location for the given city : It also got several other tools also : 
+# Limitations : 2500 request per day
+# geocodeQueryCheck to check the available limits
+# install.packages('ggmap')
+library(ggmap)
+
+#Library Needed for Text Mining
+library(tm)
+
+#for string operations
+library(stringi)
+
+#for finding word Freequency
+library(SnowballC)
+
+#Other Required Libraries
+library(RColorBrewer)
+library(wordcloud)
+library(qdap)
+library(ggplot2)
+library(topicmodels)
+library(data.table)
+library(sentiment)
+library(dplyr)
+library(streamgraph)
+```
+### Functions and Methods for carrying out repeated tasks
+#### Function to find the geo location.
+```{r}
+#Location Function
+udf_geocode = function(place,radius){
+  if(geocodeQueryCheck(userType = 'free') != '1000 geocoding queries remaining.') {
+    temp = geocode(place)
+    latLong = paste(temp$lat,temp$lon, paste(radius,'mi',sep=""), sep=",")
+  } else {
+    print('Warning : Google free services limits in nearing expiration')
+  }
+  return(latLong)
+}
+```
+#### Function for cleaning the data
+```{r}
+cleanData = function(AnyText){
+  some_txt = AnyText
+  some_txt = genX(some_txt, " <", ">")
+  some_txt = gsub(" {0,}http([[:punct:]]|[[:digit:]]|[a-z|A-Z])+", " ", some_txt)
+  #Removing Single Characters
+  some_txt = gsub("[[:punct:]]", " ", some_txt)
+  some_txt = gsub("[[:digit:]]", " ", some_txt)
+  some_txt = gsub("( ){1,}. "," ", some_txt)
+  some_txt = gsub(" .( ){1,}"," ", some_txt)
+  some_txt = gsub("^. {1,}"," ", some_txt)
+  some_txt = gsub("{1,}.$"," ", some_txt)
+  
+  #Removing Numbers
+  some_txt = gsub("[0-9]+","", some_txt)
+  
+  some_txt = gsub("(RT|via)((?:\b\\W*@\\w+)+)", " ", some_txt,perl=TRUE)
+  some_txt = gsub("@\\w+", " ", some_txt)
+  #some_txt = gsub("[ t]{2,}", " ", some_txt)
+  #some_txt = gsub("\\t", "", some_txt)
+  some_txt = gsub("^\\s+|\\s+$", " ", some_txt)
+  some_txt = gsub("amp", "", some_txt)
+  some_txt = gsub("^RT[ ]+","", some_txt)
+  some_txt = gsub("[^[:alpha:][:space:]]*", "", some_txt) 
+  some_txt = gsub("[ ]{2,}"," ", some_txt)
+  some_txt = gsub("(\b|^)[a-zA-Z0-9]{2,2}( |\n|$)+","", some_txt)
+  #some_txt = gsub("(^ )|( $)","", some_txt)
+  return(some_txt)
+}
+```
+#### Dictionary Set-Up for completing the mis
+```{r}
+stemCompletion2 <- function(x,dictionary) {
+  x <- unlist(strsplit(as.character(x)," "))
+  x <- x[x !=""]
+  x <- stemCompletion(x, dictionary = dictionary)
+  x <- paste(x, sep="", collapse=" ")
+  PlainTextDocument(stripWhitespace(x))
+}
+```
+#### Replacing the incorrect words
+```{r}
+replaceWord <- function(corpus, oldword, newword)
+{
+  tm_map(corpus, content_transformer(gsub), pattern=oldword, replacement=newword)
+}
+```
+
+
+
+### Importing the Twitter Data : Data about "Bitcoin"
+```{r}
+#Twitter Data
+setup_twitter_oauth(consumer_key = 'mJsnRMKaLZ6nR6Zk55VvUV7jF',consumer_secret =  'nwwaMduWOFoxBT9ztZtMwRoUGDj0oFquFOKkG5UZpz7pXXxIih')
+TweetData =  searchTwitteR(searchString = "Bitcoin",n = 1000, resultType = 'mixed', lang = "en")
+TweetDF = twListToDF(TweetData)
+TweetDF$created = as.Date(TweetDF$created, format="%d-%m-%y")
+```
+
+
+### Cleaning the Data and ensuring minial duplicate tweets
+```{r}
+CleandedTWeetData = sapply(TweetDF$text, function(t) cleanData(t))
+CleandedTWeetData[150]
+RepeatTweets = data.frame(table(CleandedTWeetData))
+RepeatTweets = RepeatTweets[order(RepeatTweets$Freq, decreasing = FALSE),]
+nrow(RepeatTweets)
+nrow(unique(RepeatTweets))
+CleandedTWeetData = unique(CleandedTWeetData)
+```
+
+### Creatign Data Corpus and Tweaking it
+```{r}
+#Corpus
+TweetDataCorpus = VCorpus(VectorSource(CleandedTWeetData))
+TweetDataCorpus = tm_map(TweetDataCorpus, content_transformer(stri_trans_tolower))
+TweetDataCorpus = tm_map(TweetDataCorpus, content_transformer(cleanData))
+# Removing Stop Words
+enStopWords<- c((stopwords('en')),c("rt", "use", "used", "via", "amp", "http","https","character","hour","year","id","min","datetimestamp","description","isdst","heading","language","meta","mday","mon","wday","yday","listcontent","day","re", "itt"))
+TweetDataCorpus = tm_map(TweetDataCorpus,removeWords , enStopWords) 
+```
+
+#### Creating a copy of the corpus to perfomg dictionay operations
+```{r}
+TweetDataCorpusDict = TweetDataCorpus
+TweetDataCorpusDict = unique(unlist(strsplit(as.character(TweetDataCorpusDict)," ")))
+TweetDataCorpusWords = unlist(strsplit(as.character(TweetDataCorpus)," "))
+TweetDataCorpusDict = Corpus(VectorSource(TweetDataCorpusDict))
+```
+
+### Stemming the data
+```{r}
+TweetDataCorpus = tm_map(TweetDataCorpus, stemDocument)
+writeLines(strwrap(TweetDataCorpus[[150]]$content,60))
+
+#####Stem Complete and Display the same tweet above with the completed and corrected text. 
+TweetDataCorpus <- lapply(TweetDataCorpus, stemCompletion2, dictionary=TweetDataCorpusDict)
+TweetDataCorpus <- VCorpus(VectorSource(TweetDataCorpus))
+writeLines(strwrap(TweetDataCorpus[[150]]$content, 60))
+```
+
+
+### Identifying and correcting misspelt words if any and that too if it is impacting in squeing data
+```{r Word correction}
+TokenWords = sapply(TweetDataCorpusWords, function(x) gsub("([[:punct:]]| {1,}|[0-9])", "", x))
+TokenWords = data.frame(TokenWords)
+TokenWords = data.frame(table(TokenWords))
+TokenWords = TokenWords[order(TokenWords$Freq, decreasing = T),]
+head(as.matrix(TokenWords), 40)
+
+TweetDataCorpus =  replaceWord(TweetDataCorpus, "bitcoi ", "bitcoin")
+TweetDataCorpus =  replaceWord(TweetDataCorpus, "cryptocurren ", "cryptocurrency")
+
+
+```
+
+### Building Term Document Matrix
+```{r}
+TwitterTDM = TermDocumentMatrix(TweetDataCorpus, control= list(wordLengths= c(1, Inf)))
+TwitterTDM
+
+TwitterIdx <- which(dimnames(TwitterTDM)$Terms %in% c("bitcoin", "blockchain"))
+as.matrix(TwitterTDM[TwitterIdx,21:30])
+```
+
+
+### To identify the terms that are most used freequently
+```{r}
+freq_terms = findFreqTerms(TwitterTDM, lowfreq = 20)
+freq_terms
+term.freq <- rowSums(as.matrix(TwitterTDM))
+term.freq <- subset(term.freq, term.freq > 20)
+term.freq
+TermDataFrame <- data.frame(term = names(term.freq), freq= term.freq)
+TermDataFrame
+```
+
+### Plotting the Term Freequency as a graph
+```{r}
+ggplot(TermDataFrame, aes(reorder(term, freq),freq)) + theme_bw() + geom_bar(stat = "identity")  + coord_flip() +labs(list(title="Term Frequency Chart", x="Terms", y="Term Counts")) 
+```
+
+
+#####calculate the frequency of words and sort it by frequency and setting up the Wordcloud
+```{r WordCloud, warning=FALSE}
+TweetWordCloud  <-sort(rowSums(as.matrix(TwitterTDM)), decreasing= F)
+pal<- brewer.pal(8, "Dark2")
+wordcloud(words = names(TweetWordCloud), freq =TweetWordCloud, min.freq = 2, random.order = F, colors = pal, max.words = 100)
+
+# Identify and plot word correlations. For example 
+WordCorr <- apply_as_df(TweetDataCorpus[1:500], word_cor, word = "money", r=.25)
+plot(WordCorr)
+
+qheat(vect2df(WordCorr[[1]], "word", "cor"), values=TRUE, high="red",
+digits=2, order.by ="cor", plot = FALSE) + coord_flip()
+
+# Messages with word - love
+Termdf <- data.frame(text=sapply(TweetDataCorpus, `[[`, "content"), stringsAsFactors=FALSE)
+head(unique(Termdf[grep("money", Termdf$text), ]), n=10)
+```
+
+
+##### Finding association with a specific keyword in the tweets
+```{r Find Association}
+findAssocs(TwitterTDM, "india", 0.2)
+findAssocs(TwitterTDM, "profit", 0.2)
+```
+
+
+#### Topic Modeling to identify latent/hidden topics using Linear Dicriminant technique
+```{r}
+dtm <- as.DocumentTermMatrix(TwitterTDM)
+
+rowTotals <- apply(dtm , 1, sum)
+
+NullDocs <- dtm[rowTotals==0, ]
+dtm   <- dtm[rowTotals > 0, ]
+
+as.numeric(NullDocs$dimnames$Docs)
+
+if (length(NullDocs$dimnames$Docs) > 0) {
+  TweetDF <- TweetDF[-as.numeric(NullDocs$dimnames$Docs),]
+}
+print(i)
+
+lda <- LDA(dtm, k = 5) # find 5 topic
+term <- terms(lda, 7) # first 7 terms of every topic
+(term <- apply(term, MARGIN = 2, paste, collapse = ", "))
+
+topics<- topics(lda)
+topics<- data.frame(date=(TweetDF$created), topic = topics[-c(677:686)])
+qplot (date, ..count.., data=topics, geom ="density", fill= term[topic], position="stack")
+
+```
+
+
+
+#####Sentiment Analysis to identify positive/negative tweets
+
+```{r Sentiment Analysis}
+# Use qdap polarity function to detect sentiment
+'[[.qdap_hash' <- '[[.data.frame'
+sentiments = qdap::polarity("This is cool")
+
+sentiments <- data.frame(sentiments$all$polarity)
+
+sentiments[["polarity"]] <- cut(sentiments[[ "sentiments.all.polarity"]], c(-5,0.0,5), labels = c("negative","positive"))
+
+table(sentiments$polarity)```
