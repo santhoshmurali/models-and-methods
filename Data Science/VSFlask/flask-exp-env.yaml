@@ -1,0 +1,7 @@
+name:vs_flask_example
+
+dependencies:
+    - python=3.7.3
+    - flask=1.0.7
+    - numpy
+    - pandas
