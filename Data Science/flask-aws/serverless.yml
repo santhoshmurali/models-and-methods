@@ -1,0 +1,27 @@
+#serverlss.yml
+
+service: flask-aws
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
+
+custom:
+  wsgi:
+    app: app.app
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: non-linux
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: dev
+  region: us-west-2
+
+functions:
+  app:
+    handler: wsgi.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
